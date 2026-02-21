@@ -5,65 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Um caderno para todos governar</title>
     <style>
-        /* Reset para garantir que o padding não quebre a largura */
         * {
             box-sizing: border-box;
         }
 
         body, html {
-            height: 100%;
+            /* min-height permite que a página cresça além da altura da tela */
+            min-height: 100vh; 
             margin: 0;
             display: flex;
             justify-content: center; 
-            /* Centraliza verticalmente por padrão, mas permite rolar se o texto for grande */
-            align-items: center;     
+            /* Alinha ao topo por padrão para evitar que o H1 suma em telas pequenas/médias */
+            align-items: flex-start;     
             background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6; /* Melhor legibilidade para textos longos */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
         }
 
         .container {
-            width: 90%;              /* Ocupa quase toda a largura em telas pequenas */
-            max-width: 650px;        /* Um pouco mais largo para acomodar melhor a análise */
-            padding: 30px 20px;
+            width: 90%;
+            max-width: 750px; /* Aumentado levemente para melhor leitura no desktop */
+            padding: 40px 50px;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            text-align: left;        /* Alinhamento à esquerda para melhor leitura */
-            margin: 20px auto;       /* Margem de segurança para telas pequenas */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+            margin: 40px auto; /* Margem vertical para não colar nas bordas do navegador */
         }
 
-        h1, h3 {
+        /* Estilização dos Títulos para Desktop */
+        h1 {
             text-align: center;
-            color: #222;
+            color: #1a1a1a;
             margin-bottom: 10px;
+            font-size: 2.5rem; /* Tamanho maior para destaque no PC */
+            line-height: 1.2;
         }
 
         h3 {
+            text-align: center;
             font-weight: normal;
             color: #666;
             border-bottom: 1px solid #eee;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
         }
 
         p {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: #333;
+            font-size: 1.1rem;
         }
 
-        /* Ajustes para Mobile */
+        ul {
+            margin-bottom: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        li p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Ajustes Responsivos para Mobile */
         @media (max-width: 600px) {
-            body {
-                align-items: flex-start; /* Alinha ao topo em telas pequenas */
-            }
             .container {
                 width: 95%;
-                padding: 20px 15px;
-                border-radius: 4px; /* Bordas mais suaves no mobile */
+                padding: 25px 20px;
+                margin: 20px auto;
             }
+            
             h1 {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font-size: 1rem;
             }
         }
     </style>
@@ -73,63 +100,60 @@
         <h1>Um caderno para todos governar</h1>
         <h3>21/02/2026 Impressões</h3>
 
-       <p>Pois é, ano novo e aquela minha promessa de usar um caderno de novo. Um caderno de anotações. Hoje em dia está chique, chamam de "commonplace notebook". Acho chique mas inútil.</p>
+        <p>Pois é, ano novo e aquela minha promessa de usar um caderno de novo. Um caderno de anotações. Hoje em dia está chique, chamam de "commonplace notebook". Acho chique mas inútil.</p>
 
-<p>Já tentei utilizar estes cadernos. Minha primeira tentativa foi em 2015. Tentei novamente em 2018, na pandemia, depois da pandemia... nenhuma tentativa foi um sucesso.</p>
+        <p>Já tentei utilizar estes cadernos. Minha primeira tentativa foi em 2015. Tentei novamente em 2018, na pandemia, depois da pandemia... nenhuma tentativa foi um sucesso.</p>
 
-<p>Para que anotar o que você pensa? Existem pessoas e pessoas, algumas precisam colocar pra fora pensamentos, arquivar, anotar, desenhar. Outras não.</p>
+        <p>Para que anotar o que você pensa? Existem pessoas e pessoas, algumas precisam colocar pra fora pensamentos, arquivar, anotar, desenhar. Outras não.</p>
 
-<p>Uma outra tentiva frustrada minha de organizar meus pensamentos foi de forma digital. Aplicativos como Notion e Obsidian. No começo vai tudo bem, mas duas semanas seguintes eu já esqueço de anotar, não acesso o app todo dia, esqueço minhas tags...</p>
+        <p>Uma outra tentativa frustrada minha de organizar meus pensamentos foi de forma digital. Aplicativos como Notion e Obsidian. No começo vai tudo bem, mas duas semanas seguintes eu já esqueço de anotar, não acesso o app todo dia, esqueço minhas tags...</p>
 
-<p>Hoje prefiro fazer tudo na minha cabeça. Sei perfeitamente o que tenho que fazer e isso não é um granda problema. De certa forma, é um problema, pois com a idade minha capacidade de reter informações de longo prazo certamente decairá. Mas até lá tenho um sistema simples e funcional, melhor que qualquer caderno.</p>
+        <p>Hoje prefiro fazer tudo na minha cabeça. Sei perfeitamente o que tenho que fazer e isso não é um grande problema. De certa forma, é um problema, pois com a idade minha capacidade de reter informações de longo prazo certamente decairá. Mas até lá tenho um sistema simples e funcional, melhor que qualquer caderno.</p>
 
-<p>Primeiramente, quais são os meus objetivos a longo prazo, médio e curto prazo? Vou dar um exemplo atual para te exemplificar o que quero dizer.</p>
+        <p>Primeiramente, quais são os meus objetivos a longo prazo, médio e curto prazo? Vou dar um exemplo atual para te exemplificar o que quero dizer.</p>
 
-<ul>
-<li>
-<p>Objetivo de longo prazo (20 anos+): Conseguir um valor X de dinheiro para me aposentar com a idade Y.</p>
-</li>
-</ul>
-      
-      
+        <ul>
+            <li>
+                <p>Objetivo de longo prazo (20 anos+):</p>
+                Conseguir um valor X de dinheiro para me aposentar com a idade Y.
+            </li>
+        </ul>
 
-<p>Neste caso. O objetivo existe mas não preciso ficar pensando nele a todo tempo, pois sua resolução é a longo tempo. Penso nele quando quero alguma meta longa, mas não me preocupo com isso diariamente. Não é algo para gravar a ferro e fogo como tatuagem, e pode alterar seus parâmetros com o tempo.</p>
+        <p>Neste caso, o objetivo existe mas não preciso ficar pensando nele a todo tempo, pois sua resolução é a longo prazo. Penso nele quando quero alguma meta longa, mas não me preocupo com isso diariamente. Não é algo para gravar a ferro e fogo como tatuagem, e pode alterar seus parâmetros com o tempo.</p>
 
+        <ul>
+            <li>
+                <p>Objetivo de médio prazo:</p>
+                Concluir meu currículo.
+            </li>
+        </ul>
 
-<ul>
-<li>
-<p>Objetivo de médio prazo: Concluir meu currículo.</p>
-</li>
-</ul>
-      
+        <p>Para isso sei que em 3 a 4 anos isto será resolvido. Faltam algumas pós, algumas graduações e um mestrado talvez, se eu tiver interesse algum dia. A meta existe, é tangível e eu não preciso pensar nela a todo tempo. Meus objetivos diários caminham para a resolução desse objetivo de médio prazo.</p>
 
-<p>Para isso sei que em 3 a 4 anos isto será resolvido. Faltam algumas pós, algumas graduações e um mestrado talvez (se eu tiver saco para tentar novamente), se eu tiver interesse algum dia. A meta existe, é tangível e eu não preciso pensar nela a todo tempo. Meus objetivos diários caminham para a resolução desse objetivo de médio prazo.</p>
+        <ul>
+            <li>
+                <p>Objetivo de curto prazo:</p>
+                Variável, em escala diária, semanal e mensal.
+            </li>
+        </ul>
 
+        <p>Sei delimitar o que preciso entregar de resultado para mim mesmo em prazos concretos. Se aquela prova do curso deve ser entregue com "deadline" de 2 semanas, faço agora. Se tenho tempo adianto tudo, assim ganho blocos de tempo que posso ficar sem fazer nada. Quanto mais rápido a resolução, menos estresse e mais perto dos meus objetivos de médio prazo.</p>
 
-<ul>
-<li>
-<p>Objetivo de curto prazo: Variável, em escala diária, semanal e mensal.</p>
-</li>
-</ul>
-      
+        <p>Os objetivos curtos eu delimito diariamente e semanalmente. Sei os prazos, sei as datas, organizo e entrego muito antes destes prazos. Nunca deixei algo para o último dia. Sempre resolvo com uma semana de vantagem, pois há tempo para revisão.</p>
 
+        <p>Para objetivos curtos delimito diariamente mentalmente 3 metas do dia. Sim, 3 coisas que devo resolver naquele dia. Coisas simples, que consigo fazer em menos de 3h na maioria das vezes.</p>
 
-<p>Sei delimitar o que preciso entregar de resultado para mim mesmo em prazo concretos. Se aquela prova do curso deve ser entregue com "deadline" de 2 semanas, faço agora. Se tenho tempo adianto tudo, assim ganho blocos de tempo que posso ficar sem fazer nada. Quanto mais rápido a resolução, menos estresse e mais perto dos meus objetivos de médio prazo.</p>
+        <p>Não anoto, não escrevo, só tenho essas metas na minha mente.</p>
 
-<p>Os objetivos curtos eu delimito diariamente e semanalmente. Sei os prazos, sei as datas, organizo e entrego muito antes destes prazos. Nunca deixei algo para o último dia. Sempre resolvo com uma semana de vantagem, pois há tempo para revisão.</p>
+        <p>Hoje mesmo, uma meta era escrever e postar este artigo no blog, outra meta era realizar 2 provas no curso que estou fazendo, e a terceira meta era jogar 1h do jogo que estou jogando. Isto está na minha cabeça.</p>
 
-<p>Para objetivos curtos delimito diariamente mentalmente 3 metas do dia. Sim, 3 coisas que devo resolver naquele dia. Coisas simples, que consigo fazer em menos de 3h na maioria das vezes.</p>
+        <p>60% das vezes, concluo as 3 metas, 20% das vezes concluo 2 metas, 20% das vezes concluo apenas uma meta. Isto é variável de acordo com meu humor.</p>
 
-<p>Não anoto, não escrevo, só tenho essas metas na minha mente.</p>
+        <p>E o caderno? Um item supremo de anotações? Para mim não funciona, ficar gerenciando textos em papel, anotando, rabiscando, reescrevendo... faço isso tudo mentalmente, e até hoje não deixei nenhuma atividade caducar.</p>
 
-<p>Hoje mesmo, uma meta era escrever e postar este artigo no blog, outra meta era realizar 2 provas no curso que estou fazendo, e a terceira meta era jogar 1h do jogo que estou jogando. Isto está na minha cabeça.</p>
+        <p>E você? Usa o "commonplace notebook"? Acha útil? Usa apps e serviços de anotação de memórias e metas, como o Notion e Obsidian?</p>
 
-<p>60% das vezes, concluo as 3 metas, 20% das vezes concluo 2 metas, 20% das vezes concluo apenas uma meta. Insto é variável de acordo com meu humor.</p>
-
-<p>E o caderno? Um item supremo de anotações? Para mim não funciona, ficar gerenciando textos em papel, anotando, rabiscando, reescrevendo... faço isso tudo mentalmente, e até hoje não deixei nenhuma atividade caducar.</p>
-
-<p>E você? Usa o "commonplace notebook"? Acha útil? Usa apps e serviçõs de anotação de memórias e metas, com o notion e obsidian?</p>
-
-<p>Sei que cada pessoa tem seu sistema. O meu é só pensar. Lembro de tudo, aos meus 38 anos de idade. Mas acho que a partir dos 60 "um caderno para todos governar" será a solução.</p>   </div>
+        <p>Sei que cada pessoa tem seu sistema. O meu é só pensar. Lembro de tudo, aos meus 38 anos de idade. Mas acho que a partir dos 60 "um caderno para todos governar" será a solução.</p>
+    </div>
 </body>
 </html>
