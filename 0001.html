@@ -5,23 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O início do blog</title>
     <style>
+        /* Reset básico para evitar barras de rolagem desnecessárias */
+        * {
+            box-sizing: border-box;
+        }
+
         body, html {
             height: 100%;
             margin: 0;
             display: flex;
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: center;     /* Centraliza verticalmente */
+            justify-content: center; 
+            /* Mudamos para 'flex-start' em telas pequenas para não cortar o topo se o texto for longo */
+            align-items: center;     
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            line-height: 1.6; /* Melhora a leitura no celular */
         }
+
         .container {
-            width: 80%;              /* Largura da caixa */
-            max-width: 600px;        /* Limita o tamanho máximo */
-            padding: 20px;
+            width: 90%;              /* Aumentamos para 90% para aproveitar melhor telas pequenas */
+            max-width: 600px;        
+            padding: 30px 20px;      /* Padding levemente ajustado */
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;      /* Centraliza o texto dentro da caixa */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: left;        /* Texto alinhado à esquerda é melhor para blocos longos de leitura */
+            margin: 20px auto;       /* Margem para não colar nas bordas da tela */
+        }
+
+        h1, h3 {
+            text-align: center;      /* Mantemos os títulos centralizados */
+            color: #333;
+        }
+
+        /* Ajuste específico para celulares muito pequenos */
+        @media (max-width: 480px) {
+            body {
+                align-items: flex-start; /* No mobile, o conteúdo começa do topo */
+            }
+            .container {
+                width: 95%;
+                padding: 15px;
+                box-shadow: none;    /* Remove sombra em telas minúsculas para um look mais limpo */
+            }
+            h1 {
+                font-size: 1.5rem;   /* Diminui um pouco o título no celular */
+            }
         }
     </style>
 </head>
@@ -30,14 +59,13 @@
         <h1>O início do blog</h1>
         <h3>19/02/2026 Impressões</h3>
 
-        <p>Dando início a um novo blog, desta vez hospedado no github. Acredito que assim eu tenha algum controle maior sobre edição, e se meu provedor morrer tenho meus arquivos pessoais intactos.</p>
+        <p>Dando início a um novo blog, desta vez hospedado no GitHub. Acredito que assim eu tenha algum controle maior sobre edição, e se meu provedor morrer tenho meus arquivos pessoais intactos.</p>
         
         <p>É aquela coisa de sempre, estarei postando aqui com alguma regularidade. O layout gráfico vou manter nestes arquivos HTML sem estética alguma. Há quem diga que os HTML crus por si só são uma estética. Mas não pretendo incluir imagens por aqui, somente texto.</p>
 
-        <p>Então, vai dar certo este projeto? Não sei. Vou tentar. Ninguém irá acessar isto aqui mesmo. Mas isto ocupa parte do meu tempo, só pela diversão mesmo, porque não há muita utilidade em montar uma estrutura de blog como se fosse os anos 90 em um repositório do github. Mesmo assim, vou tentar criar algo.</p>
+        <p>Então, vai dar certo este projeto? Não sei. Vou tentar. Ninguém irá acessar isto aqui mesmo. Mas isto ocupa parte do meu tempo, só pela diversão mesmo, porque não há muita utilidade em montar uma estrutura de blog como se fosse os anos 90 em um repositório do GitHub. Mesmo assim, vou tentar criar algo.</p>
 
-        <p>Público aqui será mínimo. Mas quem se interessa com público hoje em dia? Irei postar em português, visto que não pretendo que meus pensamentos sejam acessados amplamente em inglês. Bom, hoje em dia tem tradutores que escaneam e traduzem a página inteira. Não tenho como fugir disto.</p>
+        <p>Público aqui será mínimo. Mas quem se interessa com público hoje em dia? Irei postar em português, visto que não pretendo que meus pensamentos sejam acessados amplamente em inglês. Bom, hoje em dia tem tradutores que escaneiam e traduzem a página inteira. Não tenho como fugir disto.</p>
     </div>
 </body>
 </html>
-
