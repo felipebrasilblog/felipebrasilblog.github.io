@@ -5,23 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donkey Kong Country</title>
     <style>
+        /* Reset para garantir que o padding não quebre a largura */
+        * {
+            box-sizing: border-box;
+        }
+
         body, html {
             height: 100%;
             margin: 0;
             display: flex;
-            justify-content: center; /* Centraliza horizontalmente */
-            align-items: center;     /* Centraliza verticalmente */
+            justify-content: center; 
+            /* Centraliza verticalmente por padrão, mas permite rolar se o texto for grande */
+            align-items: center;     
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            line-height: 1.6; /* Melhor legibilidade para textos longos */
         }
+
         .container {
-            width: 80%;              /* Largura da caixa */
-            max-width: 600px;        /* Limita o tamanho máximo */
-            padding: 20px;
+            width: 90%;              /* Ocupa quase toda a largura em telas pequenas */
+            max-width: 650px;        /* Um pouco mais largo para acomodar melhor a análise */
+            padding: 30px 20px;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;      /* Centraliza o texto dentro da caixa */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: left;        /* Alinhamento à esquerda para melhor leitura */
+            margin: 20px auto;       /* Margem de segurança para telas pequenas */
+        }
+
+        h1, h3 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-weight: normal;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* Ajustes para Mobile */
+        @media (max-width: 600px) {
+            body {
+                align-items: flex-start; /* Alinha ao topo em telas pequenas */
+            }
+            .container {
+                width: 95%;
+                padding: 20px 15px;
+                border-radius: 4px; /* Bordas mais suaves no mobile */
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
         }
     </style>
 </head>
@@ -30,17 +73,17 @@
         <h1>Donkey Kong Country</h1>
         <h3>19/02/2026 Jogos</h3>
 
-        <p>Joguei novamente Donkey kong country de Super Nintendo. Desta vez no meu novo portátil o AYANEO Pocket air mini. Joguei via retroarch, no android.</p>
+        <p>Joguei novamente Donkey Kong Country de Super Nintendo. Desta vez no meu novo portátil o AYANEO Pocket Air Mini. Joguei via RetroArch, no Android.</p>
         
-        <p>Não tenho muito o que falar deste jogo. É um jogo que eu joguei muito quando criança, pois possuia a fita na época. Tive a trilogia inteira e devo ter terminado umas 20 vezes ou mais quando criança. É um dos grandes jogos que joguei entre meus 7 e 11 anos de idade, no super nintendo.</p>
+        <p>Não tenho muito o que falar deste jogo. É um jogo que eu joguei muito quando criança, pois possuía a fita na época. Tive a trilogia inteira e devo ter terminado umas 20 vezes ou mais quando criança. É um dos grandes jogos que joguei entre meus 7 e 11 anos de idade, no Super Nintendo.</p>
 
-        <p>Jogando novamente hoje em dia, o impacto não foi tão grande quanto na primeira vez que joguei. Aparentemente meus dedos já sabiam o que fazer, achei o jogo fácil, ainda mais utilizando save state no início das fases e no checkpoint central das mesmas. Posso te dizer que é um bom jogo mas vale mais pela nostalgia do que pela qualidade geral. Como plataforma e considerando a época em qua foi criado é excelente, gráficos fora da curva. Mas o jogo peca em muitos aspectos que as sequências desenvolvem de forma melhor.</p>
+        <p>Jogando novamente hoje em dia, o impacto não foi tão grande quanto na primeira vez que joguei. Aparentemente meus dedos já sabiam o que fazer, achei o jogo fácil, ainda mais utilizando <em>save state</em> no início das fases e no checkpoint central das mesmas. Posso te dizer que é um bom jogo mas vale mais pela nostalgia do que pela qualidade geral. Como plataforma e considerando a época em que foi criado é excelente, gráficos fora da curva. Mas o jogo peca em muitos aspectos que as sequências desenvolvem de forma melhor.</p>
 
         <p>O design das fases é muito pouco inspirador. Existem ambientes distintos mas as sequências de plataforma são lineares e previsíveis. Como dificuldade só os inimigos que surgem rapidamente na tela e que exigem um desvio rápido. No geral achei a diversidade de inimigos muito boa, mas são muito parecidos entre si. Desta forma, a plataforma é simples e as maneiras de enfrentar os inimigos é muito linear e direta. Não há uma necessidade de esperar ataques ou outras formas de atacar... é só pular na cabeça e você resolve o problema de 90% dos inimigos.</p>
 
-        <p>Embora em 1994 a mecânica principal de jogos de plataforma estar ainda em evolução, donkey kong country não adiciona nada de novo. As novidade são gráficas, as fases com carrinho de mina e claro a música. A música desse jogo é muito boa mesmo. Os gráficos, para a época fantásticos. Sinto que o que sustenta o primeiro jogo da série são os avanços nestas duas áreas.</p>
+        <p>Embora em 1994 a mecânica principal de jogos de plataforma estar ainda em evolução, Donkey Kong Country não adiciona nada de novo. As novidades são gráficas, as fases com carrinho de mina e claro a música. A música desse jogo é muito boa mesmo. Os gráficos, para a época fantásticos. Sinto que o que sustenta o primeiro jogo da série são os avanços nestas duas áreas.</p>
         
-        <p>E em 2026, vale a pena jogar? Claro, com save state é um jogo que dura menos de 3 horas. Perfeitamente aceitável. No entanto, se quiser mesmo um desafio eu recomendaria as sequências deste jogo. Ele é fácil, simples, inovador para sua época, e completamente jogável hoje em dia</p>
+        <p>E em 2026, vale a pena jogar? Claro, com <em>save state</em> é um jogo que dura menos de 3 horas. Perfeitamente aceitável. No entanto, se quiser mesmo um desafio eu recomendaria as sequências deste jogo. Ele é fácil, simples, inovador para sua época, e completamente jogável hoje em dia.</p>
     </div>
 </body>
 </html>
