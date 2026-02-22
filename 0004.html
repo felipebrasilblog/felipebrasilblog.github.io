@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um caderno para todos governar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            /* min-height permite que a página cresça além da altura da tela */
+            min-height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            /* Alinha ao topo por padrão para evitar que o H1 suma em telas pequenas/médias */
+            align-items: flex-start;     
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px; /* Aumentado levemente para melhor leitura no desktop */
+            padding: 40px 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+            margin: 40px auto; /* Margem vertical para não colar nas bordas do navegador */
+        }
+
+        /* Estilização dos Títulos para Desktop */
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.5rem; /* Tamanho maior para destaque no PC */
+            line-height: 1.2;
+        }
+
+        h3 {
+            text-align: center;
+            font-weight: normal;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            margin-bottom: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        li p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Ajustes Responsivos para Mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 25px 20px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CAPSULE - Haikara Girl (2001)</h1>
+        <h3>22/02/2026 Impressões</h3>
+
+      <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Kanji/Kana</th>
+                <th>Transliteração</th>
+                <th>Tradução Literal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td class="kanji">サムライロジック</td><td>Samurai Logic</td><td>Lógica Samurai</td></tr>
+            <tr><td>2</td><td class="kanji">粉雪</td><td>Konayuki</td><td>Neve em Pó</td></tr>
+            <tr><td>3</td><td class="kanji">恋ノ花</td><td>Koi no Hana</td><td>Flor do Amor</td></tr>
+            <tr><td>4</td><td class="kanji">真夜中の電話</td><td>Mayonaka no Denwa</td><td>Telefone à Meia-noite</td></tr>
+            <tr><td>5</td><td class="kanji">花火</td><td>Hanabi</td><td>Fogos de Artifício</td></tr>
+            <tr><td>6</td><td class="kanji">壊れた時計</td><td>Kowareta Tokei</td><td>Relógio Quebrado</td></tr>
+            <tr><td>7</td><td class="kanji">愛してる愛してない</td><td>Aishiteru Aishitenai</td><td>Amo, Não Amo</td></tr>
+            <tr><td>8</td><td class="kanji">うつつ</td><td>Utsutsu</td><td>Realidade (ou Devaneio)</td></tr>
+            <tr><td>9</td><td class="kanji">神様の歌声</td><td>Kamisama no Utagoe</td><td>A Voz de Deus Cantando</td></tr>
+            <tr><td>10</td><td class="kanji">カクレンボ</td><td>Kakurenbo</td><td>Esconde-esconde</td></tr>
+            <tr><td>11</td><td class="kanji">電気十露盤</td><td>Denki Soroban</td><td>Ábaco Elétrico</td></tr>
+            <tr><td>12</td><td class="kanji">東京喫茶</td><td>Tokyo Kissa</td><td>Café de Tóquio</td></tr>
+            <tr><td>13</td><td class="kanji">写真</td><td>Shashin</td><td>Fotografia</td></tr>
+            <tr><td>14</td><td class="kanji">さくら</td><td>Sakura</td><td>Flor de Cerejeira</td></tr>
+        </tbody>
+    </table>
+
+
+
+      
+  </div>
+</body>
+</html>
