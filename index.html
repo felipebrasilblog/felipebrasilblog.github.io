@@ -12,15 +12,15 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            padding: 20px; /* Espaço nas bordas em telas pequenas */
-            font-family: sans-serif; /* Uma fonte mais moderna */
+            padding: 20px; 
+            font-family: sans-serif;
         }
 
         /* Estilização da Tabela */
         table {
             width: 100%;
-            max-width: 800px; /* Não deixa a tabela gigante no PC */
-            border-collapse: collapse; /* Bordas mais bonitas */
+            max-width: 800px;
+            border-collapse: collapse;
             font-size: 18px;
             margin-top: 20px;
         }
@@ -35,47 +35,71 @@
             background-color: #f2f2f2;
         }
 
+        /* Ajustes para o Formulário dentro da Tabela */
+        .form-table td {
+            text-align: left; /* Alinha o texto das etiquetas à esquerda */
+        }
+
+        .form-table input, .form-table textarea {
+            width: 100%;
+            box-sizing: border-box; /* Garante que o padding não quebre a largura */
+            padding: 8px;
+            font-family: inherit;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 15px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .btn-enviar {
+            font-size: 18px; /* Mesma fonte da tabela */
+            padding: 10px 30px;
+            cursor: pointer;
+        }
+
         /* --- RESPONSIVIDADE (CELULAR) --- */
         @media (max-width: 600px) {
-            table {
-                font-size: 14px; /* Diminui a fonte para caber tudo */
+            table, .btn-enviar {
+                font-size: 14px;
             }
             
-            /* Opcional: Faz com que a tabela permita scroll lateral se for muito grande */
             .table-container {
                 width: 100%;
                 overflow-x: auto;
             }
 
             th, td {
-                padding: 5px; /* Reduz o espaçamento interno */
+                padding: 5px;
             }
         }
     </style>
 </head>
 <body>
 
-    
-<h2>Livro de visitas</h2>
-<form
-  action="https://formspree.io/f/mvzbvobr"
-  method="POST"
->
+    <h2>Livro de visitas</h2>
 
-  <label>
-   Seu nome:
-    <input type="e-mail" name="e-mail">
-  </label>
+    <form action="https://formspree.io/f/mvzbvobr" method="POST" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+        <table class="form-table">
+            <tr>
+                <td style="width: 30%;">Seu nome aqui</td>
+                <td><input type="text" name="nome" required></td>
+            </tr>
+            <tr>
+                <td>Deixe sua mensagem aqui</td>
+                <td><textarea name="mensagem" rows="4" required></textarea></td>
+            </tr>
+        </table>
+        
+        <div class="btn-container">
+            <button type="submit" class="btn-enviar">ENVIAR</button>
+        </div>
+    </form>
+
     <br>
-  <label>
-    Deixe uma mensagem para mim aqui:
-    <textarea name="Mensagen index"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Enviar</button>
-</form>
 
-    
     <div class="table-container">
         <table>
             <thead>
@@ -84,7 +108,7 @@
                 </tr>
             </thead>
             <tbody>
-                 <tr>
+                <tr>
                     <td>#0004</td>
                     <td><a href="0004.html">CAPSULE - Haikara Girl (2001)</a></td>
                     <td><a href="musicas.html">Músicas</a></td>
@@ -105,7 +129,7 @@
                 <tr>
                     <td>#0001</td>
                     <td><a href="0001.html">O início do Blog</a></td>
-                     <td><a href="impressoes.html">Impressões</a></td>
+                    <td><a href="impressoes.html">Impressões</a></td>
                     <td>19/02/2026</td>
                 </tr>
             </tbody>
@@ -114,6 +138,3 @@
 
 </body>
 </html>
-</body>
-</html>
-
