@@ -1,3 +1,8 @@
+Com certeza! Para dar esse ar de "pergaminho" ou livro antigo, vamos aplicar tons de sépia, bordas marrons duplas e trocar a fonte por uma com serifa (estilo máquina de escrever ou clássica).
+
+Aqui está o código atualizado. Foquei as mudanças na classe .form-table e nos seus elementos internos:
+HTML
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,81 +19,109 @@
             margin: 0;
             padding: 20px; 
             font-family: sans-serif;
+            background-color: #fcfaf2; /* Um fundo levemente off-white para combinar */
         }
 
-        /* Tabela Principal (Referência de tamanho: 800px) */
+        /* Tabela Principal */
         .tabela-principal {
             width: 100%;
             max-width: 800px;
             border-collapse: collapse;
             font-size: 18px;
             margin-top: 20px;
+            background-color: #fff;
         }
 
-        th, td {
+        .tabela-principal th, .tabela-principal td {
             border: 2px solid #333;
             padding: 10px;
             text-align: center;
         }
 
-        th {
+        .tabela-principal th {
             background-color: #f2f2f2;
         }
 
-        /* --- CORES ALTERNADAS (ZEBRA) NA SEGUNDA TABELA --- */
-        /* Aplica cinza claro nas linhas pares do corpo da tabela */
         .tabela-principal tbody tr:nth-child(even) {
             background-color: #f9f9f9;
         }
         
-        /* Garante que as linhas ímpares sejam brancas */
         .tabela-principal tbody tr:nth-child(odd) {
             background-color: #ffffff;
         }
 
-        /* --- TABELA LIVRO DE VISITAS (50% da principal = 400px) --- */
+        /* --- TABELA LIVRO DE VISITAS (ESTILO ANTIGO) --- */
         .form-table {
             width: 400px;
-            font-family: Arial, sans-serif;
             border-collapse: collapse;
+            /* Cor amarelada de papel antigo */
+            background-color: #f4e4bc; 
+            /* Borda marrom grossa e dupla para parecer capa de livro */
+            border: 6px double #5d4037; 
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            font-family: "Times New Roman", Times, serif;
         }
 
         .form-table th {
             font-weight: bold;
             text-align: center;
+            padding: 15px;
+            font-size: 22px;
+            color: #3e2723;
+            border-bottom: 2px solid #5d4037;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .form-table td {
+            border: 1px solid #d7ccc8; /* Bordas internas suaves */
+            padding: 12px;
         }
 
         .col-label {
             width: 100px;
             text-align: left;
-            font-size: 14px;
-            line-height: 1.2;
-            font-weight: normal;
+            font-size: 15px;
+            font-weight: bold;
+            color: #5d4037;
         }
 
+        /* Inputs com aspecto de papel */
         .form-table input, .form-table textarea {
             width: 100%;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: "Courier New", Courier, monospace; /* Fonte de máquina de escrever */
             resize: none;
-            border: 1px solid #999;
+            border: 1px solid #a1887f;
+            background-color: #fdf8e1;
+            color: #3e2723;
+            padding: 5px;
         }
 
-        .form-table input { height: 25px; }
-        .form-table textarea { height: 45px; }
+        .form-table input { height: 30px; }
+        .form-table textarea { height: 60px; }
 
         .btn-enviar {
-            font-size: 18px;
-            padding: 5px 20px;
+            font-size: 16px;
+            padding: 8px 25px;
             cursor: pointer;
-            font-family: Arial, sans-serif;
-            margin-top: 10px;
+            font-family: "Times New Roman", serif;
+            margin-top: 15px;
+            background-color: #5d4037;
+            color: #f4e4bc;
+            border: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-enviar:hover {
+            background-color: #3e2723;
         }
 
         /* --- RESPONSIVIDADE --- */
         @media (max-width: 600px) {
             .form-table {
-                width: 90%;
+                width: 95%;
             }
             .tabela-principal {
                 font-size: 14px;
@@ -102,7 +135,7 @@
         <table class="form-table">
             <thead>
                 <tr>
-                    <th colspan="2">Livro de visitas</th>
+                    <th colspan="2">📜 Livro de visitas</th>
                 </tr>
             </thead>
             <tbody>
@@ -117,7 +150,7 @@
             </tbody>
         </table>
         
-        <button type="submit" class="btn-enviar">ENVIAR</button>
+        <button type="submit" class="btn-enviar">ASSINAR LIVRO</button>
     </form>
 
     <br><br>
