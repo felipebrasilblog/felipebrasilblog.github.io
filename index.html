@@ -35,27 +35,37 @@
             background-color: #f2f2f2;
         }
 
+        /* --- CORES ALTERNADAS (ZEBRA) NA SEGUNDA TABELA --- */
+        /* Aplica cinza claro nas linhas pares do corpo da tabela */
+        .tabela-principal tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        /* Garante que as linhas ímpares sejam brancas */
+        .tabela-principal tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
         /* --- TABELA LIVRO DE VISITAS (50% da principal = 400px) --- */
         .form-table {
-            width: 400px; /* Metade dos 800px da principal */
+            width: 400px;
             font-family: Arial, sans-serif;
             border-collapse: collapse;
         }
 
         .form-table th {
-            font-weight: bold; /* Título em negrito */
+            font-weight: bold;
             text-align: center;
         }
 
         .col-label {
-            width: 100px; /* Reduzido para forçar a quebra do texto */
+            width: 100px;
             text-align: left;
             font-size: 14px;
             line-height: 1.2;
             font-weight: normal;
         }
 
-        /* Estilo dos campos de texto */
         .form-table input, .form-table textarea {
             width: 100%;
             box-sizing: border-box;
@@ -64,12 +74,11 @@
             border: 1px solid #999;
         }
 
-        /* Limitação de 2 linhas visualmente */
         .form-table input { height: 25px; }
         .form-table textarea { height: 45px; }
 
         .btn-enviar {
-            font-size: 18px; /* Mesmo tamanho da tabela principal */
+            font-size: 18px;
             padding: 5px 20px;
             cursor: pointer;
             font-family: Arial, sans-serif;
@@ -79,7 +88,7 @@
         /* --- RESPONSIVIDADE --- */
         @media (max-width: 600px) {
             .form-table {
-                width: 90%; /* Em telas pequenas, ocupa quase tudo para não sumir */
+                width: 90%;
             }
             .tabela-principal {
                 font-size: 14px;
