@@ -1,15 +1,6 @@
-Com certeza! Fiz os ajustes estruturais na tabela do formulário para que ela tenha o título unificado, a largura reduzida e o comportamento de texto que você solicitou.
+Para atender ao seu pedido, ajustei a largura da tabela do Livro de Visitas para ocupar exatamente 50% da largura da tabela principal (que tem 800px), resultando em uma largura de 400px.
 
-Aqui estão as principais mudanças:
-
-    Título Agrupado: Usei colspan="2" para criar a linha "Livro de visitas" no topo.
-
-    Largura de 60%: A tabela agora ocupa 60% da largura em telas grandes e volta a 90% em celulares para manter a legibilidade.
-
-    Texto em Duas Linhas: Ajustei a largura da primeira coluna para forçar a quebra do texto "Deixe sua mensagem aqui".
-
-    Limitação de Altura: As caixas de texto foram configuradas para não exceder visualmente o espaço de duas linhas.
-
+Também apliquei a fonte Arial, o negrito no título unificado e a quebra de linha específica na célula da mensagem.
 HTML
 
 <!DOCTYPE html>
@@ -30,8 +21,8 @@ HTML
             font-family: sans-serif;
         }
 
-        /* Estilização Geral das Tabelas */
-        table {
+        /* Tabela Principal (Referência de tamanho: 800px) */
+        .tabela-principal {
             width: 100%;
             max-width: 800px;
             border-collapse: collapse;
@@ -49,69 +40,61 @@ HTML
             background-color: #f2f2f2;
         }
 
-        /* --- AJUSTES DA TABELA SUPERIOR (FORMULÁRIO) --- */
+        /* --- TABELA LIVRO DE VISITAS (50% da principal = 400px) --- */
         .form-table {
-            width: 60%; /* Largura solicitada */
-            font-family: Arial, sans-serif; /* Fonte Arial */
+            width: 400px; /* Metade dos 800px da principal */
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
         }
 
         .form-table th {
             font-weight: bold; /* Título em negrito */
+            text-align: center;
         }
 
         .col-label {
-            width: 120px; /* Largura reduzida para forçar quebra de texto */
+            width: 100px; /* Reduzido para forçar a quebra do texto */
             text-align: left;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.2;
+            font-weight: normal;
         }
 
+        /* Estilo dos campos de texto */
         .form-table input, .form-table textarea {
             width: 100%;
             box-sizing: border-box;
-            padding: 5px;
             font-family: Arial, sans-serif;
-            border: 1px solid #ccc;
-            resize: none; /* Impede o usuário de aumentar a caixa manualmente */
+            resize: none;
+            border: 1px solid #999;
         }
 
-        /* Limita a altura para aproximadamente 2 linhas de texto */
-        .form-table input { height: 35px; }
-        .form-table textarea { height: 50px; } 
-
-        .btn-container {
-            text-align: center;
-            margin-top: 15px;
-            width: 60%;
-        }
+        /* Limitação de 2 linhas visualmente */
+        .form-table input { height: 25px; }
+        .form-table textarea { height: 45px; }
 
         .btn-enviar {
-            font-size: 18px;
-            padding: 10px 30px;
+            font-size: 18px; /* Mesmo tamanho da tabela principal */
+            padding: 5px 20px;
             cursor: pointer;
             font-family: Arial, sans-serif;
+            margin-top: 10px;
         }
 
-        /* --- RESPONSIVIDADE (CELULAR) --- */
+        /* --- RESPONSIVIDADE --- */
         @media (max-width: 600px) {
-            .form-table, .btn-container {
-                width: 90%; /* Aumenta em telas pequenas para não ficar espremido */
+            .form-table {
+                width: 90%; /* Em telas pequenas, ocupa quase tudo para não sumir */
             }
-
-            table, .btn-enviar {
+            .tabela-principal {
                 font-size: 14px;
-            }
-            
-            .table-container {
-                width: 100%;
-                overflow-x: auto;
             }
         }
     </style>
 </head>
 <body>
 
-    <form action="https://formspree.io/f/mvzbvobr" method="POST" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+    <form action="https://formspree.io/f/mvzbvobr" method="POST" style="display: flex; flex-direction: column; align-items: center;">
         <table class="form-table">
             <thead>
                 <tr>
@@ -121,24 +104,22 @@ HTML
             <tbody>
                 <tr>
                     <td class="col-label">Seu nome aqui</td>
-                    <td><input type="text" name="nome" required maxlength="50"></td>
+                    <td><input type="text" name="nome" required></td>
                 </tr>
                 <tr>
                     <td class="col-label">Deixe sua<br>mensagem aqui</td>
-                    <td><textarea name="mensagem" required maxlength="100"></textarea></td>
+                    <td><textarea name="mensagem" required></textarea></td>
                 </tr>
             </tbody>
         </table>
         
-        <div class="btn-container">
-            <button type="submit" class="btn-enviar">ENVIAR</button>
-        </div>
+        <button type="submit" class="btn-enviar">ENVIAR</button>
     </form>
 
-    <br>
+    <br><br>
 
-    <div class="table-container">
-        <table>
+    <div class="table-container" style="width: 100%; display: flex; justify-content: center;">
+        <table class="tabela-principal">
             <thead>
                 <tr>
                     <th colspan="4">Blog do Felipe Brasil Felicio</th>
