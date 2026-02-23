@@ -1,3 +1,17 @@
+Com certeza! Fiz os ajustes estruturais na tabela do formulário para que ela tenha o título unificado, a largura reduzida e o comportamento de texto que você solicitou.
+
+Aqui estão as principais mudanças:
+
+    Título Agrupado: Usei colspan="2" para criar a linha "Livro de visitas" no topo.
+
+    Largura de 60%: A tabela agora ocupa 60% da largura em telas grandes e volta a 90% em celulares para manter a legibilidade.
+
+    Texto em Duas Linhas: Ajustei a largura da primeira coluna para forçar a quebra do texto "Deixe sua mensagem aqui".
+
+    Limitação de Altura: As caixas de texto foram configuradas para não exceder visualmente o espaço de duas linhas.
+
+HTML
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -16,7 +30,7 @@
             font-family: sans-serif;
         }
 
-        /* Estilização da Tabela */
+        /* Estilização Geral das Tabelas */
         table {
             width: 100%;
             max-width: 800px;
@@ -35,33 +49,55 @@
             background-color: #f2f2f2;
         }
 
-        /* Ajustes para o Formulário dentro da Tabela */
-        .form-table td {
-            text-align: left; /* Alinha o texto das etiquetas à esquerda */
+        /* --- AJUSTES DA TABELA SUPERIOR (FORMULÁRIO) --- */
+        .form-table {
+            width: 60%; /* Largura solicitada */
+            font-family: Arial, sans-serif; /* Fonte Arial */
+        }
+
+        .form-table th {
+            font-weight: bold; /* Título em negrito */
+        }
+
+        .col-label {
+            width: 120px; /* Largura reduzida para forçar quebra de texto */
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.2;
         }
 
         .form-table input, .form-table textarea {
             width: 100%;
-            box-sizing: border-box; /* Garante que o padding não quebre a largura */
-            padding: 8px;
-            font-family: inherit;
+            box-sizing: border-box;
+            padding: 5px;
+            font-family: Arial, sans-serif;
+            border: 1px solid #ccc;
+            resize: none; /* Impede o usuário de aumentar a caixa manualmente */
         }
+
+        /* Limita a altura para aproximadamente 2 linhas de texto */
+        .form-table input { height: 35px; }
+        .form-table textarea { height: 50px; } 
 
         .btn-container {
             text-align: center;
             margin-top: 15px;
-            width: 100%;
-            max-width: 800px;
+            width: 60%;
         }
 
         .btn-enviar {
-            font-size: 18px; /* Mesma fonte da tabela */
+            font-size: 18px;
             padding: 10px 30px;
             cursor: pointer;
+            font-family: Arial, sans-serif;
         }
 
         /* --- RESPONSIVIDADE (CELULAR) --- */
         @media (max-width: 600px) {
+            .form-table, .btn-container {
+                width: 90%; /* Aumenta em telas pequenas para não ficar espremido */
+            }
+
             table, .btn-enviar {
                 font-size: 14px;
             }
@@ -70,27 +106,28 @@
                 width: 100%;
                 overflow-x: auto;
             }
-
-            th, td {
-                padding: 5px;
-            }
         }
     </style>
 </head>
 <body>
 
-    <h2>Livro de visitas</h2>
-
     <form action="https://formspree.io/f/mvzbvobr" method="POST" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
         <table class="form-table">
-            <tr>
-                <td style="width: 30%;">Seu nome aqui</td>
-                <td><input type="text" name="nome" required></td>
-            </tr>
-            <tr>
-                <td>Deixe sua mensagem aqui</td>
-                <td><textarea name="mensagem" rows="4" required></textarea></td>
-            </tr>
+            <thead>
+                <tr>
+                    <th colspan="2">Livro de visitas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-label">Seu nome aqui</td>
+                    <td><input type="text" name="nome" required maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td class="col-label">Deixe sua<br>mensagem aqui</td>
+                    <td><textarea name="mensagem" required maxlength="100"></textarea></td>
+                </tr>
+            </tbody>
         </table>
         
         <div class="btn-container">
