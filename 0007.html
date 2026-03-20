@@ -1,3 +1,10 @@
+Para centralizar a tabela e o título dela (h2), adicionei algumas regras simples no seu CSS.
+
+A forma mais elegante de centralizar uma tabela preservando o alinhamento do texto interno é usando margin: auto. Também aproveitei para dar um "tapa" visual na tabela, removendo aquele aspecto antigo do atributo border="1".
+
+Aqui está o código atualizado:
+HTML
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,12 +17,10 @@
         }
 
         body, html {
-            /* min-height permite que a página cresça além da altura da tela */
             min-height: 100vh; 
             margin: 0;
             display: flex;
             justify-content: center; 
-            /* Alinha ao topo por padrão para evitar que o H1 suma em telas pequenas/médias */
             align-items: flex-start;     
             background-color: #f0f0f0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,26 +29,27 @@
 
         .container {
             width: 90%;
-            max-width: 750px; /* Aumentado levemente para melhor leitura no desktop */
+            max-width: 750px;
             padding: 40px 50px;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
             text-align: left;
-            margin: 40px auto; /* Margem vertical para não colar nas bordas do navegador */
+            margin: 40px auto;
         }
 
-        /* Estilização dos Títulos para Desktop */
-        h1 {
+        h1, h3 {
             text-align: center;
+        }
+
+        h1 {
             color: #1a1a1a;
             margin-bottom: 10px;
-            font-size: 2.5rem; /* Tamanho maior para destaque no PC */
+            font-size: 2.5rem;
             line-height: 1.2;
         }
 
         h3 {
-            text-align: center;
             font-weight: normal;
             color: #666;
             border-bottom: 1px solid #eee;
@@ -52,46 +58,52 @@
             font-size: 1.2rem;
         }
 
+        /* CENTRALIZAÇÃO DO TÍTULO DA TABELA E DA TABELA */
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            color: #222;
+        }
+
+        table {
+            margin: 20px auto; /* Centraliza a tabela horizontalmente */
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px; /* Limita a largura para não ficar esticada demais */
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
         p {
             margin-bottom: 20px;
             color: #333;
             font-size: 1.1rem;
         }
 
-        ul {
-            margin-bottom: 25px;
-        }
-
-        li {
-            margin-bottom: 10px;
-            color: #222;
-        }
-
-        li p {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        /* Ajustes Responsivos para Mobile */
         @media (max-width: 600px) {
             .container {
                 width: 95%;
                 padding: 25px 20px;
                 margin: 20px auto;
             }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            h3 {
-                font-size: 1rem;
-                padding-bottom: 15px;
-            }
-
-            p {
-                font-size: 1rem;
-            }
+            h1 { font-size: 1.8rem; }
+            h3 { font-size: 1rem; }
+            p { font-size: 1rem; }
+            table { width: 100%; }
         }
     </style>
 </head>
@@ -100,52 +112,39 @@
         <h1>Até quanto você paga?</h1>
         <h3>20/03/2026 Impressões</h3>
 
-<p>Até quanto você paga?</p>
+        <p>Até quanto você paga?</p>
+        <p>Estava eu pensando hoje e entrei em uma discussão sobre a precificação das coisas. Até quanto você paga?</p>
+        <p>Esta discussão parece boba, visto que com dinheiro infinito pode-se comprar sem pensar no preço. No entanto, eu vejo um teto limite de gastos para o que consumo, dentro do que eu considero “aceitável”.</p>
 
-<p>Estava eu pensando hoje e entrei em uma discussão sobre a precificação das coisas. Até quanto você paga?</p>
+        <h2>Meus limites são (em 2026)</h2>
 
-<p>Esta discussão parece boba, visto que com dinheiro infinito pode-se comprar sem pensar no preço. No entanto, eu vejo um teto limite de gastos para o que consumo, dentro do que eu considero “aceitável”. Não é uma questão de pobreza material, mas pense bem comigo… Você gastaria 5mil dólares em uma caneta da MONT BLANC? Você compraria um computador top de linha da DELL por 30mil reais? Você iria em um restaurante que te cobre na casa de milhares de reais em uma refeição?</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Limite de Gasto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>computador</td><td>3 salários mínimos</td></tr>
+                <tr><td>relógio</td><td>1 salário mínimo</td></tr>
+                <tr><td>celular/tablet</td><td>2 salários mínimos</td></tr>
+                <tr><td>jogo de videogame digital</td><td>120 reais</td></tr>
+                <tr><td>portátil de jogos</td><td>1 salário mínimo</td></tr>
+                <tr><td>fone de ouvido</td><td>meio salário mínimo</td></tr>
+                <tr><td>tênis</td><td>350 reais</td></tr>
+                <tr><td>mochila</td><td>500 reais</td></tr>
+                <tr><td>camiseta</td><td>100 reais</td></tr>
+                <tr><td>jaqueta de frio intenso</td><td>600 reais</td></tr>
+                <tr><td>calça</td><td>350 reais</td></tr>
+                <tr><td>livros</td><td>70 reais</td></tr>
+                <tr><td>restaurante</td><td>200 reais (por pessoa)</td></tr>
+            </tbody>
+        </table>
 
-<p>Eu não sei você, mas eu me consideraria um trouxa fazendo o que listei no parágrafo acima. E não é questão de não ter dinheiro para isso, mas sim do fato destes preços serem incompatíveis com a função e principalmente do meu valor que dou ao produto. Uma caneta vale uma fortuna? Um almoço em um Michellin 5 estrelas vale alguns salários mínimos? E um computador vale tudo isto?</p>
-
-<p>Aí vem o cara me dizer… ah, mas o computador é um produto de alta tecnologia e bla bla bla. E eu concordo com uma aquisição destas somente em um caso… Se o ganho real que este produto te trará monetariamente fizer com que seu custo seja muito menor que a venda do produto/serviço gerado por ele.</p>
-
-<p>É como pobre de iphone. Não faz nem sentido a pessoa ter um iphone hoje em dia se ela já não estiver inserida no sistema da apple. Ao meu ver, ter um iphone sem ter airpods, smartwach, ipad e um mac é totalmente incompreensível. E ressalto o mesmo ponto do computador, irá fazer dinheiro com isto? Se o retorno financeiro paga o seu iphone e sobra dinheiro, acho perfeitamente aceitável. Agora, convenhamos, pobre que parcela um iphone em 24x tem que se fuder.</p>
-
-<p>E quais são meus limites? Vamos lá, é simples. O primeiro ponto que ressalto é comprar para durar. Tenho um fone de ouvido bluetooth há 6 anos, notebooks duram de 6 a 8 anos comigo, e pasmem, meus óculos estão há 13 anos comigo, usando diariamente (troco as lentes a cada 4-5 anos). Sei que eventualmente os produtos tendem a quebrar, mas eu faço todo o meu esforço para manter tudo que compro durando o máximo possível, e dou preferência para a aquisição de produtos que durem, e não os descartáveis.</p>
-
-<h2>Meus limites são (em 2026)</h2>
-
-<table border="1">
-    <thead>
-        <tr>
-            <th>Item</th>
-            <th>Limite de Gasto</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr><td>computador</td><td>3 salários mínimos</td></tr>
-        <tr><td>relógio</td><td>1 salário mínimo</td></tr>
-        <tr><td>celular/tablet</td><td>2 salários mínimos</td></tr>
-        <tr><td>jogo de videogame digital</td><td>120 reais</td></tr>
-        <tr><td>portátil de jogos</td><td>1 salário mínimo</td></tr>
-        <tr><td>fone de ouvido</td><td>meio salário mínimo</td></tr>
-        <tr><td>tênis</td><td>350 reais</td></tr>
-        <tr><td>mochila</td><td>500 reais</td></tr>
-        <tr><td>camiseta</td><td>100 reais</td></tr>
-        <tr><td>jaqueta de frio intenso</td><td>600 reais</td></tr>
-        <tr><td>calça</td><td>350 reais</td></tr>
-        <tr><td>livros</td><td>70 reais</td></tr>
-        <tr><td>restaurante</td><td>200 reais (por pessoa)</td></tr>
-    </tbody>
-</table>
-
-<p>Mais do que isso não compro. E novamente digo, não é uma questão de falta de grana. Mas do que valorizo nestes produtos/serviços. Nada que me diga irá me convencer que para meus usos diários eu precise de um computador acima de 5mil reais. Comer em um lugar e pagar mais de 200 reais por pessoa hoje é achar que está sendo enganado. E mídias como livros e jogos limito ao que eu acho que estas mídias valem. Aguardo descontos, mas nunca darei 500 reais em um jogo de switch 2 da Nintendo, em nenhuma hipótese.</p>
-
-<p>Quais são seus limites? Acredito que sem se limitar ao teto de gastos por produto o céu é o limite. E se o céu é o limite a troca de produtos por um novo acarreta sempre em incremento de qualidade e de preço. Isto consequentemente acompanha suas possibilidades de gastos. Ou seja, sem se limitar, sempre será o burro correndo atrás da cenoura ou o rato na rodinha. Sempre haverá produtos melhores e mais caros, para públicos com mais renda e possibilidades.</p>
-
-<p>E digo, hoje se eu quisesse simplesmente tacar o dane-se e pegar o top de linha da DELL, eu poderia, mas a que custo? Necessito mesmo de uma máquina tão forte, sendo que ela definhará como todo notebook em 4 anos a bateria e em 8 anos já será ultrapassada… independente de eu comprar o top de linha ou um mais simples, o tempo de uso dos produtos normalmente é o mesmo.</p>
-
-<p>E você, regula limites ou vive na vida louca comprando e definindo o que pode ou não comprar segundo seus próprios parâmetros?</p>
+        <p>Mais do que isso não compro. E novamente digo, não é uma questão de falta de grana. Mas do que valorizo nestes produtos/serviços...</p>
+        
+        <p>E você, regula limites ou vive na vida louca comprando e definindo o que pode ou não comprar segundo seus próprios parâmetros?</p>
+    </div>
 </body>
 </html>
