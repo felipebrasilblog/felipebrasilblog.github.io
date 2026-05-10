@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contra as métricas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            min-height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start;     
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            padding: 40px 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+            margin: 40px auto;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-weight: normal;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+
+        /* CENTRALIZAÇÃO DO TÍTULO DA TABELA E DA TABELA */
+        h2 {
+            text-align: center; /* Centraliza o título da tabela */
+            margin-top: 40px;
+            color: #222;
+        }
+
+        table {
+            margin: 20px auto; /* O 'auto' nas laterais centraliza a tabela no container */
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px; /* Largura sugerida para não esticar demais no desktop */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            margin-bottom: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        li p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Ajustes Responsivos para Mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 25px 20px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            table {
+                width: 100%; /* No celular ela ocupa a largura total disponível */
+            }
+        }
+      
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 1.2em;
+        }
+
+        /* Centralização da Tabela */
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* Formatação das cores da linha do topo */
+        tr:first-child th:nth-child(1) {
+            background-color: #add8e6; /* Azul claro */
+        }
+
+        tr:first-child th:nth-child(2) {
+            background-color: #ffcccb; /* Vermelho claro */
+        }
+
+        tr:first-child th:nth-child(3) {
+            background-color: #90ee90; /* Verde claro */
+        }
+
+        /* Estilo zebrado para facilitar leitura */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contra as métricas</h1>
+        <h3>09/05/2026 Impressões</h3>
+
+<div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Brasileira</th>
+                    <th>Internacional</th>
+                    <th>Japonesa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Angra</td><td>Acid House Kings</td><td>ANRI</td></tr>
+                <tr><td>Blindagem</td><td>AIR</td><td>Asian Kung-fu Generation</td></tr>
+                <tr><td>Caetano Veloso</td><td>Alcest</td><td>Ayumi Hamasaki</td></tr>
+                <tr><td>Cartola</td><td>Arcade Fire</td><td>Boris</td></tr>
+                <tr><td>Cazuza</td><td>Arctic Monkeys</td><td>Capsule</td></tr>
+                <tr><td>Chico Buarque</td><td>Asobi Seksu</td><td>Casiopea</td></tr>
+                <tr><td>Chico Science e Nação Zumbi</td><td>Belle and Sebastian</td><td>EPO</td></tr>
+                <tr><td>Djavan</td><td>Björk</td><td>Gesu no Kiwami Otome</td></tr>
+                <tr><td>Elis Regina</td><td>Daft Punk</td><td>HAppy End</td></tr>
+                <tr><td>Fernanda Abreu</td><td>Dinosaur Jr.</td><td>Kirinji</td></tr>
+                <tr><td>Gal Costa</td><td>Elvis Presley</td><td>Kishidan</td></tr>
+                <tr><td>Gilberto Gil</td><td>Fishboy</td><td>KUKIKODAN</td></tr>
+                <tr><td>Ivan Lins</td><td>France Gall</td><td>Lamp</td></tr>
+                <tr><td>Jorge Ben</td><td>Girls at our Best</td><td>Perfume</td></tr>
+                <tr><td>Jupiter Apple</td><td>Go Sailor</td><td>Pizzicato Five</td></tr>
+                <tr><td>Legião Urbana</td><td>Heavenly</td><td>Quruli</td></tr>
+                <tr><td>Lenine</td><td>Iron Maiden</td><td>Ryusenkei</td></tr>
+                <tr><td>Lulu Santos</td><td>Joy Division</td><td>S. Kiyotaka & Omega Tribe</td></tr>
+                <tr><td>Marisa Monte</td><td>Madonna</td><td>Shugo Tokumaru</td></tr>
+                <tr><td>Milton Nascimento</td><td>Manowar</td><td>Tatsuro Yamashita</td></tr>
+                <tr><td>Mordida</td><td>Michael Jackson</td><td>Tokyo Jihen</td></tr>
+                <tr><td>Nando Reis</td><td>My Bloody Valentine</td><td>T Square</td></tr>
+                <tr><td>Nara Leão</td><td>Nouvelle Vague</td><td>Utada Hikaru</td></tr>
+                <tr><td>Ney Matogrosso</td><td>of Montreal</td><td>Wagakki band</td></tr>
+                <tr><td>Novos Baianos</td><td>Portishead</td><td>Yoshida brothers</td></tr>
+                <tr><td>Os Mutantes</td><td>Queen</td><td>Yellow Magic Orchestra</td></tr>
+                <tr><td>Paralamas do Sucesso</td><td>Radiohead</td><td></td></tr>
+                <tr><td>Raul Seixas</td><td>Sonata Arctica</td><td></td></tr>
+                <tr><td>Rita Lee</td><td>Stereolab</td><td></td></tr>
+                <tr><td>Roupa Nova</td><td>The Beatles</td><td></td></tr>
+                <tr><td>SKANK</td><td>The Cure</td><td></td></tr>
+                <tr><td>Tim Maia</td><td>The Killers</td><td></td></tr>
+                <tr><td>Titãs</td><td>The Radio dept.</td><td></td></tr>
+                <tr><td></td><td>The Smiths</td><td></td></tr>
+                <tr><td></td><td>The Strokes</td><td></td></tr>
+                <tr><td></td><td>The Whitest boy alive</td><td></td></tr>
+                <tr><td></td><td>The White Stripes</td><td></td></tr>
+                <tr><td></td><td>Weezer</td><td></td></tr>
+                <tr><td></td><td>Wilco</td><td></td></tr>
+                <tr><td></td><td>Yo la Tengo</td><td></td></tr>
+            </tbody>
+        </table>
+    </div>
+
+      
+      
+
+</body>
+</html>
