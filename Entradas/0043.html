@@ -29,6 +29,18 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
             text-align: left;
             margin: 40px auto;
+            /* Garante que os elementos flex internos respeitem o alinhamento central */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Garante que os parágrafos ocupem a largura total do container */
+        p {
+            width: 100%;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1rem;
         }
 
         h1, h3 {
@@ -49,20 +61,21 @@
             padding-bottom: 20px;
             margin-bottom: 30px;
             font-size: 1.2rem;
+            width: 100%;
         }
 
         /* CENTRALIZAÇÃO DO TÍTULO DA TABELA E DA TABELA */
         h2 {
-            text-align: center; /* Centraliza o título da tabela */
+            text-align: center; 
             margin-top: 40px;
             color: #222;
         }
 
         table {
-            margin: 20px auto; /* O 'auto' nas laterais centraliza a tabela no container */
+            margin: 20px auto; 
             border-collapse: collapse;
             width: 100%;
-            max-width: 500px; /* Largura sugerida para não esticar demais no desktop */
+            max-width: 500px; 
         }
 
         th, td {
@@ -75,14 +88,9 @@
             background-color: #f8f8f8;
         }
 
-        p {
-            margin-bottom: 20px;
-            color: #333;
-            font-size: 1.1rem;
-        }
-
         ul {
             margin-bottom: 25px;
+            width: 100%;
         }
 
         li {
@@ -93,6 +101,31 @@
         li p {
             font-weight: bold;
             margin-bottom: 5px;
+        }
+
+        /* --- BOTÃO RETORNAR (Estilo SITEFELIPE) --- */
+        .btn-retornar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .btn-retornar:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
         }
 
         /* Ajustes Responsivos para Mobile */
@@ -117,7 +150,13 @@
             }
 
             table {
-                width: 100%; /* No celular ela ocupa a largura total disponível */
+                width: 100%; 
+            }
+
+            .btn-retornar {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                width: 100%;
             }
         }
     </style>
@@ -127,35 +166,40 @@
         <h1>Mudanças de design do blog</h1>
         <h3>22/05/2026 Metablog</h3>
 
-<p>
-Hoje fiz uma reforma no design antigo do blog. Alterei aquela tabela sem graça e adaptei o design dos botões e cores da tabela principal conforme a estrutura de design do meu site pessoal. Agora a cor principal é o verde. Ainda estou em dúvida se altero a fonte do título do site na parte superior, provavelmente esta seria minha próxima mudança de layout.
-</p>
+        <p>
+        Hoje fiz uma reforma no design antigo do blog. Alterei aquela tabela sem graça e adaptei o design dos botões e cores da tabela principal conforme a estrutura de design do meu site pessoal. Agora a cor principal é o verde. Ainda estou em dúvida se altero a fonte do título do site na parte superior, provavelmente esta seria minha próxima mudança de layout.
+        </p>
 
-<p>
-Adicionei 3 botões no index que se espelham em todas as páginas do Cabeçalho. Estes três botões são: Sobre, Arquivo e Temas. Ainda penso na possibilidade de gerar um feed RSS neste site mas não sei como implementar, e se eu teria que fazer a entrada manual em casa postagem nova. Infelizmente o github tem limitações com PHP e as possibilidades de alimentar um arquivo .XML. Vou dar uma pesquisada se isto é possível mais para frente.
-</p>
+        <p>
+        Adicionei 3 botões no index que se espelham in todas as páginas do Cabeçalho. Estes três botões são: Sobre, Arquivo e Temas. Ainda penso na possibilidade de gerar um feed RSS neste site mas não sei como implementar, e se eu teria que fazer a entrada manual em casa postagem nova. Infelizmente o github tem limitações com PHP e as possibilidades de alimentar um arquivo .XML. Vou dar uma pesquisada se isto é possível mais para frente.
+        </p>
 
-<p>
-Por enquanto o “Sobre mim” está bem simples, no texto eu indico meu site e consequentemente se a pessoa tiver interesse terá meus contatos e currículo no meu site.
-</p>
+        <p>
+        Por enquanto o “Sobre mim” está bem simples, no texto eu indico meu site e consequentemente se a pessoa tiver interesse terá meus contatos e currículo no meu site.
+        </p>
 
-<p>
-Os Temas eu tentei formalizar a melhor forma de atender todo tipo de post que eu vá criar. São 24 temas e não sei se expandirei para um número maior que este. A vantagem é o fato de ficarem poucos posts por tema, pois eles se distribuem mais entre as páginas de cada tema. Desta forma mesmo gerando muito material, ele se dissolve entre os 24 temas e fica de uma leitura mais agradável ao meu ver. Talvez gerar uma quebra por páginas a cada 50 posts de cada tema, para melhor leitura e navegação.
-</p>
+        <p>
+        Os Temas eu tentei formalizar a melhor forma de atender todo tipo de post que eu vá criar. São 24 temas e não sei se expandirei para um número maior que este. A vantagem é o fato de ficarem poucos posts por tema, pois eles se distribuem mais entre as páginas de cada tema. Desta forma mesmo gerando muito material, ele se dissolve entre os 24 temas e fica de uma leitura mais agradável ao meu ver. Talvez gerar uma quebra por páginas a cada 50 posts de cada tema, para melhor leitura e navegação.
+        </p>
 
-<p>
-O Arquivo está com placeholder ainda, não sei se eu gero arquivos a cada 50 ou 100 posts. Considerando que o máximo que o site suporta são 10mil posts (eu uma situação hipotética que eu consiga escrever isto até o fim da minha vida), acho que dividir a cada 100 posts seria interessante. Por outro lado, também vejo que 50 posts é bastante. Então, embora eu acredite que o leitor vai se guiar pelos temas, um arquivamento de 50 a 50posts por página parece ótimo também.
-</p>
+        <p>
+        O Arquivo está com placeholder ainda, não sei se eu gero arquivos a cada 50 ou 100 posts. Considerando que o máximo que o site suporta são 10mil posts (eu uma situação hipotética que eu consiga escrever isto até o fim da minha vida), acho que dividir a cada 100 posts seria interessante. Por outro lado, também vejo que 50 posts é bastante. Então, embora eu acredite que o leitor vai se guiar pelos temas, um arquivamento de 50 a 50posts por página parece ótimo também.
+        </p>
 
-<p>
-E a página inicial? Acho que vou jogar tudo ali, espero que não pese muito, porque é só texto (e links), mas acho que não pesa muito uma tabela. Acredito que se chegar a milhares de linhas talvez pese. Não sei. Depois dou um jeito nisto. Deixar só os 10 posts mais recentes na página inicial e um link para o arquivo total em outro lugar? Acho que é uma boa ideia também, vi alguns blogs que tomam esta medida.
-</p>
+        <p>
+        E a página inicial? Acho que vou jogar tudo ali, espero que não pese muito, porque é só texto (e links), mas acho que não pesa muito uma tabela. Acredito que se chegar a milhares de linhas talvez pese. Não sei. Depois dou um jeito nisto. Deixar só os 10 posts mais recentes na página inicial e um link para o arquivo total em outro lugar? Acho que é uma boa ideia também, vi alguns blogs que tomam esta medida.
+        </p>
 
-<p>
-Uma coisa que vou começar a implementar em todo posta é um botão de “Voltar ao início” ao final da postagem. A partir deste post aqui este será o padrão.
-</p>
+        <p>
+        Uma coisa que vou começar a implementar em todo posta é um botão de “Voltar ao início” ao final da postagem. A partir deste post aqui este será o padrão.
+        </p>
 
-<p>
-Espero que estas melhorias gráficas e de navegação fiquem mais interessantes para que o leitor ache o conteúdo que precisa e não se perca no site.
-</p>
-    </html>
+        <p>
+        Espero que estas melhorias gráficas e de navegação fiquem mais interessantes para que o leitor ache o conteúdo que precisa e não se perca no site.
+        </p>
+
+        <!-- Botão integrado mantendo a classe e destino padrão do seu blog -->
+        <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
+    </div>
+</body>
+</html>
