@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim | Blog de Felipe Brasil Felicio</title>
+    
+    <style>
+        /* Estilos Globais baseados no SITEFELIPE */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', sans-serif; 
+        }
+        
+        body { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px; 
+            background-color: #f2f5f3; /* Fundo esverdeado claro do SITEFELIPE */
+            color: #1a1a1a; 
+        }
+
+        /* Container Principal (Estilo do Card do SITEFELIPE) */
+        .container { 
+            width: 100%;
+            max-width: 740px; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Alinhamento do Contador de Visitas */
+        .contador-visitas {
+            margin-bottom: 15px;
+        }
+
+        /* Título da Página (Estilo H1 do SITEFELIPE) */
+        h1 { 
+            font-size: 1.8rem; 
+            margin-bottom: 25px; 
+            color: #2d4a31; 
+            text-align: center;
+        }
+
+        /* Tabela de Conteúdo (Estilo do SITEFELIPE) */
+        .tabela-conteudo {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1.05rem;
+            margin: 10px 0;
+        }
+
+        .tabela-conteudo th, .tabela-conteudo td {
+            text-align: left;
+            padding: 16px 12px;
+            border-bottom: 1px solid #e8eee9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .tabela-conteudo th {
+            color: #7cb382;
+            font-weight: 600;
+            background: transparent;
+            border-bottom: 2px solid #7cb382;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* Links Gerais */
+        a { 
+            color: #7cb382; 
+            text-decoration: none; 
+            font-weight: 500; 
+        }
+        a:hover { 
+            text-decoration: underline; 
+            color: #5e8c63; 
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; border-radius: 12px; }
+            h1 { font-size: 1.5rem; }
+            .tabela-conteudo { font-size: 0.95rem; }
+            .tabela-conteudo th, .tabela-conteudo td { padding: 12px 6px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="contador-visitas">
+    <img src="https://hitscounter.dev/api/hit?url=felipebrasilblog.github.io&label=Visitantes&icon=broadcast&color=%23198754&message=&style=social&tz=Brazil%2FEast" alt="Contador de Visitas">
+</div>
+
+<div class="container">
+    <h1>Sobre Mim</h1>
+
+    <table class="tabela-conteudo">
+        <thead>
+            <tr>
+                <th>Apresentação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Olá, me chamo Felipe Brasil e este é meu blog.</td>
+            </tr>
+            <tr>
+                <td>Aqui discuto ideias do meu dia a dia, em temas que me interessam.</td>
+            </tr>
+            <tr>
+                <td>Espero que algum conteúdo aqui seja útil para você.</td>
+            </tr>
+            <tr>
+                <td>Ah, eu tenho um site também, <a href="http://www.felipebf.com.br" target="_blank">www.felipebf.com.br</a>, se quiser me contactar me encontre por lá.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
