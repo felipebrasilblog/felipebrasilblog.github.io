@@ -1,3 +1,10 @@
+Aqui está o código do seu arquivo de Arquivo atualizado.
+
+Assim como fizemos na página principal, adicionei uma nova linha no topo da tabela dentro do <thead> utilizando colspan="5" (já que esta tabela possui 5 colunas) e apliquei a classe .tabela-aviso com o estilo centralizado.
+
+Também adicionei a regra .tabela-aviso dentro da tag <style> para garantir o alinhamento correto e a consistência visual do seu blog:
+HTML
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -77,6 +84,18 @@
             letter-spacing: 1px;
         }
 
+        /* Estilo específico para a linha de aviso superior da tabela */
+        .tabela-aviso {
+            font-size: 0.95rem;
+            color: #555;
+            text-transform: none;
+            letter-spacing: normal;
+            font-weight: normal;
+            border-bottom: 1px dashed #7cb382 !important;
+            padding-bottom: 15px;
+            text-align: center; /* Centraliza o texto e o link */
+        }
+
         /* Ajuste de larguras das colunas da tabela incluindo 'Postagens' */
         .tabela-principal td:nth-child(1) { width: 12%; }
         .tabela-principal td:nth-child(2) { width: 22%; color: #666; }
@@ -147,6 +166,11 @@
 
     <table class="tabela-principal">
         <thead>
+            <tr>
+                <th colspan="5" class="tabela-aviso">
+                    Acesse todos os posts <a href="arquivogeral.html">aqui</a>
+                </th>
+            </tr>
             <tr>
                 <th>Página</th>
                 <th>Postagens</th>
