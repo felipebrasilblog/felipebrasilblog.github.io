@@ -6,90 +6,209 @@
     <title>Blog de Felipe Brasil Felicio</title>
     
     <style>
-        body {
+        /* Estilos Globais baseados no SITEFELIPE */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', sans-serif; 
+        }
+        
+        body { 
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            padding: 20px; /* Espaço nas bordas em telas pequenas */
-            font-family: sans-serif; /* Uma fonte mais moderna */
+            padding: 20px; 
+            background-color: #f2f5f3; /* Fundo esverdeado claro do SITEFELIPE */
+            color: #1a1a1a; 
         }
 
-        /* Estilização da Tabela */
-        table {
+        /* Container Principal (Estilo do Card do SITEFELIPE) */
+        .container { 
             width: 100%;
-            max-width: 800px; /* Não deixa a tabela gigante no PC */
-            border-collapse: collapse; /* Bordas mais bonitas */
-            font-size: 18px;
+            max-width: 740px; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
             margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        th, td {
-            border: 2px solid #333;
-            padding: 10px;
+        /* Alinhamento do Contador de Visitas */
+        .contador-visitas {
+            margin-bottom: 15px;
+        }
+
+        /* Título do Blog (Estilo H1 do SITEFELIPE) */
+        h1 { 
+            font-size: 1.8rem; 
+            margin-bottom: 20px; 
+            color: #2d4a31; 
             text-align: center;
         }
 
-        th {
-            background-color: #f2f2f2;
+        /* --- GRUPO DE BOTÕES EM LINHA (SITEFELIPE) --- */
+        .menu-botoes {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 25px;
         }
 
-        /* --- RESPONSIVIDADE (CELULAR) --- */
-        @media (max-width: 600px) {
-            table {
-                font-size: 14px; /* Diminui a fonte para caber tudo */
-            }
-            
-            /* Opcional: Faz com que a tabela permita scroll lateral se for muito grande */
-            .table-container {
-                width: 100%;
-                overflow-x: auto;
-            }
+        .btn-menu {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 8px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            flex: 1;
+            max-width: 120px;
+        }
 
-            th, td {
-                padding: 5px; /* Reduz o espaçamento interno */
-            }
+        .btn-menu:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Tabela Principal de Entradas (Estilo do SITEFELIPE) */
+        .tabela-principal {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1rem;
+            margin: 15px 0 10px 0;
+        }
+
+        .tabela-principal th, .tabela-principal td {
+            text-align: left;
+            padding: 12px 10px;
+            border-bottom: 1px solid #e8eee9;
+            color: #444;
+        }
+
+        .tabela-principal th {
+            color: #7cb382;
+            font-weight: 600;
+            background: transparent;
+            border-bottom: 2px solid #7cb382;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* Ajuste de larguras das colunas da tabela */
+        .tabela-principal td:nth-child(1) { width: 12%; color: #888; font-size: 0.9rem; }
+        .tabela-principal td:nth-child(2) { width: 50%; }
+        .tabela-principal td:nth-child(3) { width: 20%; }
+        .tabela-principal td:nth-child(4) { width: 18%; text-align: right; color: #666; }
+        .tabela-principal th:nth-child(4) { text-align: right; }
+
+        /* Links Gerais */
+        a { 
+            color: #7cb382; 
+            text-decoration: none; 
+            font-weight: 500; 
+        }
+        a:hover { 
+            text-decoration: underline; 
+            color: #5e8c63; 
+        }
+
+        /* --- BOTÃO RETORNAR (Estilo SITEFELIPE) --- */
+        .btn-retornar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .btn-retornar:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; border-radius: 12px; }
+            h1 { font-size: 1.5rem; }
+            .menu-botoes { gap: 6px; }
+            .btn-menu { padding: 8px 10px; font-size: 0.85rem; }
+            .tabela-principal { font-size: 0.85rem; }
+            .tabela-principal th, .tabela-principal td { padding: 8px 4px; }
+            .btn-retornar { padding: 8px 20px; font-size: 0.85rem; width: 100%; }
         }
     </style>
 </head>
 <body>
 
-    <div align="center">
-        <a href='https://contador.s12.com.br'>
-            <img src='https://contador.s12.com.br/img-849xD2yaZwZyZDC4-79.gif' border='0' alt='contador free'>
-        </a>
-        <br>
-        <a href='https://meuip.page/qual-e-o-meu-ip/' target='_blank'>
-            <img src='https://img.meuip.page/selo-6z1z4CD385zbDzZ0.gif' alt='Meu Ip' border='0'>
-        </a>
+<div class="contador-visitas">
+    <img src="https://hitscounter.dev/api/hit?url=felipebrasilblog.github.io&label=Visitantes&icon=broadcast&color=%23198754&message=&style=social&tz=Brazil%2FEast" alt="Contador de Visitas">
+</div>
+
+<div class="container">
+    <h1>Entradas de Diário</h1>
+
+    <div class="menu-botoes">
+        <a href="/Cabecalho/sobre.html" class="btn-menu">Sobre</a>
+        <a href="/Cabecalho/temas.html" class="btn-menu">Temas</a>
+        <a href="/Cabecalho/arquivo.html" class="btn-menu">Arquivo</a>
     </div>
 
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="4">Posts de Diário</th>
-                </tr>
-            </thead>
-            <tbody> 
-                <tr>
-                    <td>#0035</td>
-                    <td><a href="/Entradas/0035.html">Abril 2026</a></td>
-                    <td><a href="/Classes/diario.html">Diário</a></td>
-                    <td>03/05/2026</td>
-                </tr>
-                <tr>
-                    <td>#0015</td>
-                    <td><a href="/Entradas/0015.html">Março 2026</a></td>
-                    <td><a href="/Classes/diario.html">Diário</a></td>
-                    <td>05/04/2026</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <table class="tabela-principal">
+        <thead>
+            <tr>
+                <th>Cód</th>
+                <th>Título do Artigo</th>
+                <th>Categoria</th>
+                <th style="text-align: right;">Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#0035</td>
+                <td><a href="/Entradas/0035.html">2026 Abril</a></td>
+                <td><a href="/Classes/diario.html">Diário</a></td>
+                <td style="text-align: right;">03/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0015</td>
+                <td><a href="/Entradas/0015.html">2026 Março</a></td>
+                <td><a href="/Classes/diario.html">Diário</a></td>
+                <td style="text-align: right;">05/04/2026</td>
+            </tr>
+        </tbody>
+    </table>
 
-</body>
-</html>
+    <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
+</div>
+
 </body>
 </html>
