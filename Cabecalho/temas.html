@@ -67,33 +67,64 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 15px 10px;
+            padding: 12px 10px;
             border-radius: 12px;
             font-weight: bold;
-            font-size: 1rem;
+            font-size: 0.95rem;
             text-decoration: none;
-            transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+            color: #fff;
+            transition: all 0.25s ease;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
         .btn-tema:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            filter: brightness(0.95);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
             text-decoration: none;
         }
 
-        /* --- PALETA DE CORES PASTÉIS INTEGRADAS --- */
-        .pastel-verde     { background-color: #e2f0d9; color: #385723; }
-        .pastel-azul      { background-color: #ddebf7; color: #1f4e78; }
-        .pastel-amarelo   { background-color: #fff2cc; color: #7f6000; }
-        .pastel-laranja   { background-color: #fce4d6; color: #c65911; }
-        .pastel-roxo      { background-color: #e1d5e7; color: #6c5b7b; }
-        .pastel-cinza     { background-color: #f5f5f5; color: #444444; } /* Preto Pastel */
-        .pastel-vermelho  { background-color: #f8cecc; color: #b85450; }
-        .pastel-ciano     { background-color: #e5f5f5; color: #3b7a7a; }
-        .pastel-rosa      { background-color: #fadbd8; color: #78281f; }
-        .pastel-castanho  { background-color: #edbb99; color: #5e2700; }
+        /* --- PALETA DE CORES SÓLIDAS VARIADAS --- */
+        
+        /* 1. Verde Original */
+        .solido-verde { background-color: #7cb382; border: 1px solid #7cb382; }
+        .solido-verde:hover { background-color: #629668; border-color: #629668; }
+        
+        /* 2. Azul */
+        .solido-azul { background-color: #5c8ab3; border: 1px solid #5c8ab3; }
+        .solido-azul:hover { background-color: #436d94; border-color: #436d94; }
+
+        /* 3. Vermelho */
+        .solido-vermelho { background-color: #cc6666; border: 1px solid #cc6666; }
+        .solido-vermelho:hover { background-color: #b34d4d; border-color: #b34d4d; }
+
+        /* 4. Laranja */
+        .solido-laranja { background-color: #df8a57; border: 1px solid #df8a57; }
+        .solido-laranja:hover { background-color: #c4703f; border-color: #c4703f; }
+
+        /* 5. Roxo */
+        .solido-roxo { background-color: #9b7cb3; border: 1px solid #9b7cb3; }
+        .solido-roxo:hover { background-color: #806296; border-color: #806296; }
+
+        /* 6. Ciano / Teal */
+        .solido-ciano { background-color: #5ba3a3; border: 1px solid #5ba3a3; }
+        .solido-ciano:hover { background-color: #3e8585; border-color: #3e8585; }
+
+        /* 7. Rosa Escuro / Terracota Leve */
+        .solido-rosa { background-color: #c97280; border: 1px solid #c97280; }
+        .solido-rosa:hover { background-color: #ad5765; border-color: #ad5765; }
+
+        /* 8. Castanho / Marrom */
+        .solido-castanho { background-color: #b38461; border: 1px solid #b38461; }
+        .solido-castanho:hover { background-color: #966947; border-color: #966947; }
+
+        /* 9. Amarelo Escuro / Ouro Velho (para dar contraste com texto branco) */
+        .solido-amarelo { background-color: #cca043; border: 1px solid #cca043; }
+        .solido-amarelo:hover { background-color: #b0852a; border-color: #b0852a; }
+
+        /* 10. Cinza Grafite */
+        .solido-cinza { background-color: #6c757d; border: 1px solid #6c757d; }
+        .solido-cinza:hover { background-color: #5a6268; border-color: #5a6268; }
+
 
         /* --- BOTÃO RETORNAR (Estilo SITEFELIPE) --- */
         .btn-retornar {
@@ -125,7 +156,7 @@
             .container { padding: 20px; border-radius: 12px; }
             h1 { font-size: 1.5rem; margin-bottom: 20px; }
             .grade-temas { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 25px; }
-            .btn-tema { padding: 12px 8px; font-size: 0.9rem; }
+            .btn-tema { padding: 12px 8px; font-size: 0.9rem; border-radius: 10px; }
             .btn-retornar { padding: 8px 20px; font-size: 0.85rem; width: 100%; }
         }
     </style>
@@ -140,18 +171,30 @@
     <h1>Temas</h1>
 
     <div class="grade-temas">
-        <a href="/Classes/educacao.html" class="btn-tema pastel-verde">Educação</a>
-        <a href="/Classes/impressoes.html" class="btn-tema pastel-azul">Impressões</a>
-        <a href="/Classes/jogos.html" class="btn-tema pastel-amarelo">Jogos</a>
-        <a href="/Classes/musicas.html" class="btn-tema pastel-laranja">Músicas</a>
-        <a href="/Classes/diario.html" class="btn-tema pastel-roxo">Diário</a>
-        <a href="/Classes/japones.html" class="btn-tema pastel-vermelho">Japonês</a>
-        <a href="/Classes/livros.html" class="btn-tema pastel-ciano">Livros</a>
-        <a href="/Classes/animes.html" class="btn-tema pastel-rosa">Animes</a>
-        <a href="/Classes/filmes.html" class="btn-tema pastel-castanho">Filmes</a>
-        <a href="/Classes/series.html" class="btn-tema pastel-azul">Séries</a>
-        <a href="/Classes/viagens.html" class="btn-tema pastel-laranja">Viagens</a>
-        <a href="/Classes/xadrez.html" class="btn-tema pastel-cinza">Xadrez</a>
+        <a href="/Classes/educacao.html" class="btn-tema solido-verde">Educação</a>
+        <a href="/Classes/impressoes.html" class="btn-tema solido-azul">Impressões</a>
+        <a href="/Classes/jogos.html" class="btn-tema solido-vermelho">Jogos</a>
+        <a href="/Classes/musicas.html" class="btn-tema solido-laranja">Músicas</a>
+        
+        <a href="/Classes/diario.html" class="btn-tema solido-roxo">Diário</a>
+        <a href="/Classes/japones.html" class="btn-tema solido-ciano">Japonês</a>
+        <a href="/Classes/livros.html" class="btn-tema solido-rosa">Livros</a>
+        <a href="/Classes/animes.html" class="btn-tema solido-castanho">Animes</a>
+        
+        <a href="/Classes/filmes.html" class="btn-tema solido-amarelo">Filmes</a>
+        <a href="/Classes/series.html" class="btn-tema solido-cinza">Séries</a>
+        <a href="/Classes/lugares.html" class="btn-tema solido-verde">Lugares</a>
+        <a href="/Classes/xadrez.html" class="btn-tema solido-azul">Xadrez</a>
+        
+        <a href="/Classes/metablog.html" class="btn-tema solido-vermelho">Metablog</a>
+        <a href="/Classes/registros.html" class="btn-tema solido-laranja">Registros</a>
+        <a href="/Classes/cronicas.html" class="btn-tema solido-roxo">Crônicas</a>
+        <a href="/Classes/tecnologia.html" class="btn-tema solido-ciano">Tecnologia</a>
+        
+        <a href="/Classes/escola.html" class="btn-tema solido-rosa">Escola</a>
+        <a href="/Classes/games.html" class="btn-tema solido-castanho">Games</a>
+        <a href="/Classes/quadrinhos.html" class="btn-tema solido-amarelo">Quadrinhos</a>
+        <a href="/Classes/filosofia.html" class="btn-tema solido-cinza">Filosofia</a>
     </div>
 
     <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
