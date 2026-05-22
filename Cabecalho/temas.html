@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temas | Blog de Felipe Brasil Felicio</title>
+    
+    <style>
+        /* Estilos Globais baseados no SITEFELIPE */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', sans-serif; 
+        }
+        
+        body { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px; 
+            background-color: #f2f5f3; /* Fundo esverdeado claro do SITEFELIPE */
+            color: #1a1a1a; 
+        }
+
+        /* Container Principal (Estilo do Card do SITEFELIPE) */
+        .container { 
+            width: 100%;
+            max-width: 740px; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Alinhamento do Contador de Visitas */
+        .contador-visitas {
+            margin-bottom: 15px;
+        }
+
+        /* Título da Página (Estilo H1 do SITEFELIPE) */
+        h1 { 
+            font-size: 1.8rem; 
+            margin-bottom: 30px; 
+            color: #2d4a31; 
+            text-align: center;
+        }
+
+        /* --- GRADE DE BOTÕES DE TEMAS --- */
+        .grade-temas {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 15px;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 35px; /* Espaço para o botão de retornar */
+        }
+
+        .btn-tema {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 15px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .btn-tema:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            filter: brightness(0.95);
+            text-decoration: none;
+        }
+
+        /* --- PALETA DE CORES PASTÉIS INTEGRADAS --- */
+        .pastel-verde     { background-color: #e2f0d9; color: #385723; }
+        .pastel-azul      { background-color: #ddebf7; color: #1f4e78; }
+        .pastel-amarelo   { background-color: #fff2cc; color: #7f6000; }
+        .pastel-laranja   { background-color: #fce4d6; color: #c65911; }
+        .pastel-roxo      { background-color: #e1d5e7; color: #6c5b7b; }
+        .pastel-cinza     { background-color: #f5f5f5; color: #444444; } /* Preto Pastel */
+        .pastel-vermelho  { background-color: #f8cecc; color: #b85450; }
+        .pastel-ciano     { background-color: #e5f5f5; color: #3b7a7a; }
+        .pastel-rosa      { background-color: #fadbd8; color: #78281f; }
+        .pastel-castanho  { background-color: #edbb99; color: #5e2700; }
+
+        /* --- BOTÃO RETORNAR (Estilo SITEFELIPE) --- */
+        .btn-retornar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-retornar:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; border-radius: 12px; }
+            h1 { font-size: 1.5rem; margin-bottom: 20px; }
+            .grade-temas { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 25px; }
+            .btn-tema { padding: 12px 8px; font-size: 0.9rem; }
+            .btn-retornar { padding: 8px 20px; font-size: 0.85rem; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="contador-visitas">
+    <img src="https://hitscounter.dev/api/hit?url=felipebrasilblog.github.io&label=Visitantes&icon=broadcast&color=%23198754&message=&style=social&tz=Brazil%2FEast" alt="Contador de Visitas">
+</div>
+
+<div class="container">
+    <h1>Temas</h1>
+
+    <div class="grade-temas">
+        <a href="/Classes/educacao.html" class="btn-tema pastel-verde">Educação</a>
+        <a href="/Classes/impressoes.html" class="btn-tema pastel-azul">Impressões</a>
+        <a href="/Classes/jogos.html" class="btn-tema pastel-amarelo">Jogos</a>
+        <a href="/Classes/musicas.html" class="btn-tema pastel-laranja">Músicas</a>
+        <a href="/Classes/diario.html" class="btn-tema pastel-roxo">Diário</a>
+        <a href="/Classes/japones.html" class="btn-tema pastel-vermelho">Japonês</a>
+        <a href="/Classes/livros.html" class="btn-tema pastel-ciano">Livros</a>
+        <a href="/Classes/animes.html" class="btn-tema pastel-rosa">Animes</a>
+        <a href="/Classes/filmes.html" class="btn-tema pastel-castanho">Filmes</a>
+        <a href="/Classes/series.html" class="btn-tema pastel-azul">Séries</a>
+        <a href="/Classes/viagens.html" class="btn-tema pastel-laranja">Viagens</a>
+        <a href="/Classes/xadrez.html" class="btn-tema pastel-cinza">Xadrez</a>
+    </div>
+
+    <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
+</div>
+
+</body>
+</html>
