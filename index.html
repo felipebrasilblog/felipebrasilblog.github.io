@@ -42,7 +42,31 @@
 
         /* Alinhamento do Contador de Visitas */
         .contador-visitas {
+            margin-bottom: 8px;
+        }
+
+        /* Estilo do Botão RSS Pequeno */
+        .btn-rss {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 1px solid #7cb382;
+            color: #7cb382;
+            background: transparent;
+            transition: 0.3s;
             margin-bottom: 15px;
+        }
+
+        .btn-rss:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
         }
 
         /* Título do Blog (Estilo H1 do SITEFELIPE) */
@@ -159,6 +183,11 @@
 <div class="contador-visitas">
     <img src="https://hitscounter.dev/api/hit?url=felipebrasilblog.github.io&label=Visitantes&icon=broadcast&color=%23198754&message=&style=social&tz=Brazil%2FEast" alt="Contador de Visitas">
 </div>
+
+<a href="https://felipebrasilblog.github.io/feed.xml" class="btn-rss" target="_blank">
+    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 2px;"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+    RSS Feed
+</a>
  
 
 <div class="container">
