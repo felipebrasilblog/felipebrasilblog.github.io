@@ -5,6 +5,13 @@
     <link>https://felipebrasilblog.github.io</link>
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
+     <item>
+      <title>#0044 - Habemus RSS</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0044.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0044.html</guid>
+      <category>Metablog</category>
+      <description>Artigo publicado na categoria Metablog em 23/05/2026.</description>
+    </item>
     <item>
       <title>#0043 - Mudanças de design do blog</title>
       <link>https://felipebrasilblog.github.io/Entradas/0043.html</link>
