@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome on board</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            min-height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start;     
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            padding: 40px 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+            margin: 40px auto;
+            /* Garante que os elementos flex internos respeitem o alinhamento central */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Garante que os parágrafos ocupem a largura total do container */
+        p {
+            width: 100%;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-weight: normal;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+
+        /* CENTRALIZAÇÃO DO TÍTULO DA TABELA E DA TABELA */
+        h2 {
+            text-align: center; 
+            margin-top: 40px;
+            color: #222;
+        }
+
+        table {
+            margin: 20px auto; 
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px; 
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        ul {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        li p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* --- BOTÃO RETORNAR (Estilo SITEFELIPE) --- */
+        .btn-retornar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .btn-retornar:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Ajustes Responsivos para Mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 25px 20px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            table {
+                width: 100%; 
+            }
+
+            .btn-retornar {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome on board</h1>
+        <h3>24/05/2026 In English</h3>
+
+       <p>Hello,<br>
+welcome to my blog.</p>
+
+<p>My name is Felipe Brasil Felicio; I was born in 1988 in Curitiba-PR Brazil. Today I am a generalist educator, who teaches Science, Biology, Geography and I also have a degree on Special Education and Pedagogy. I am a Geologist as well.</p>
+
+<p>This blog is a way to express myself to the world while remaining hiding from the public. I host this site myself; I edit myself, I select the content and ideas and I deliver the best I can in Portuguese and English.</p>
+
+<p>In fact, if you are reading this here you probably don’t know Portuguese. I suggest you to google translate the website and posts. Portuguese to English translation is clear and I believe if you are interested in the content, it’s just one step more to be able to read most of my posts.</p>
+
+<p>The Themes (Temas) section divides the content into tags. “In English” hosts all the posts in English in one page. While I am writing this there are 24 themes. My posts in English will mix all the others themes while still retain the language in English.</p>
+
+<p>I hope you enjoy my blog. As you may notice, English in not my fist language. And I prefer not to use artificial intelligence programs to correct my texts because those A.I. are very intrusive and may change the content while correcting my writing.</p>
+
+<p>This website content of the posts is A.I. free. I use A.I. to write the code to the website, and to help me generate a reliable template I can structure. This site is 100% HTML handcrafted. All the website is hosted in github for free. RSS feed is manually updated by me every post.</p>
+
+<p>I hope you enjoy your stay. Posts are short but I am sure I am doing my best here.</p>
+        
+
+        <!-- Botão integrado mantendo a classe e destino padrão do seu blog -->
+        <a href="/index.html" class="btn-retornar">Home</a>
+    </div>
+</body>
+</html>
