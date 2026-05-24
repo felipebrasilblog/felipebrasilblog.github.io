@@ -5,6 +5,13 @@
     <link>https://felipebrasilblog.github.io</link>
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
+    <item>
+      <title>#0045 - Welcome on board</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0045.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0045.html</guid>
+      <category>In English</category>
+      <description>Artigo publicado na categoria In English em 24/05/2026.</description>
+    </item>
      <item>
       <title>#0044 - Habemus RSS</title>
       <link>https://felipebrasilblog.github.io/Entradas/0044.html</link>
