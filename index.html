@@ -166,6 +166,46 @@
             color: #5e8c63; 
         }
 
+        /* --- CONFIGURAÇÃO ADICIONADA: BOTÃO IN ENGLISH --- */
+        .secao-botao-idioma {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-tema {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .btn-tema:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .solido-azul { 
+            background-color: #5c8ab3; 
+            border: 1px solid #5c8ab3; 
+        }
+        
+        .solido-azul:hover { 
+            background-color: #436d94; 
+            border-color: #436d94; 
+        }
+
         /* --- RESPONSIVIDADE --- */
         @media (max-width: 600px) {
             body { padding: 10px; }
@@ -175,6 +215,7 @@
             .btn-menu { padding: 8px 10px; font-size: 0.85rem; }
             .tabela-principal { font-size: 0.85rem; }
             .tabela-principal th, .tabela-principal td { padding: 8px 4px; }
+            .btn-tema { width: 100%; padding: 12px 8px; font-size: 0.9rem; border-radius: 10px; }
         }
     </style>
 </head>
@@ -277,6 +318,11 @@
         
         </tbody>
     </table>
+
+    <!-- Botão "In English" inserido e centralizado abaixo da tabela -->
+    <div class="secao-botao-idioma">
+        <a href="/Classes/inenglish.html" class="btn-tema solido-azul">Posts In English here</a>
+    </div>
 </div>
 
 </body>
