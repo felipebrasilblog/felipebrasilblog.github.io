@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excitebike - NES</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            min-height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start;     
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            padding: 40px 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+            margin: 40px auto;
+            /* Garante que os elementos flex internos respeitem o alinhamento central */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Garante que os parágrafos ocupem a largura total do container */
+        p {
+            width: 100%;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-weight: normal;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+
+        /* CENTRALIZAÇÃO DO TÍTULO DA TABELA E DA TABELA */
+        h2 {
+            text-align: center; 
+            margin-top: 40px;
+            color: #222;
+        }
+
+        table {
+            margin: 20px auto; 
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px; 
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        ul {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        li p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* --- BOTÃO RETORNAR (Estilo SITEFELIPE) --- */
+        .btn-retornar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .btn-retornar:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Ajustes Responsivos para Mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 25px 20px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            table {
+                width: 100%; 
+            }
+
+            .btn-retornar {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Excitebike - NES</h1>
+        <h3>28/05/2026 Games</h3>
+      
+<p>Excitebike, jogo de Nintendinho de 1984. Quando criança eu tive um cartucho com este jogo. Eu gostava bastante dele, talvez porque era simples de jogar, talvez porque era bastante colorido.</p>
+
+<p>Hoje com 38 anos de idade peguei para jogar novamente. E sim, é divertido, porém extremamente curto. Como funciona o game? Você tem três modos de jogo. O primeiro é o mais simples, corra contra o relógio e bata seus recordes. O segundo é no mesmo estilo, mas com fases nível hard mais longas e com mais motoqueiros no cenário, é uma corrida. E o terceiro modo de jogo você constrói sua pista e pode correr nela.</p>
+
+<p>Em quanto tempo você bate todos? Eu diria que depois dos 10 minutos iniciais em que você está se acostumando com os controles, você leva mais uns 40 minutos para fazer tudo que o jogo oferece.</p>
+
+<p>E qual é o gameplay? Você tem dois botões, o A e o B. Segurar um deles mantém uma aceleração constante e não desgasta o contador de temperatura. Apertando o outro botão você dá um <em>boost</em> na moto, ela acelera mais, mas pode superaquecer. Se a moto superaquecer você sai da pista e aguarda um tempo para voltar.</p>
+
+<p>A fase tem obstáculos, aprender como pular em cada obstáculo é crucial. Para isto você usa os botões de seta. Seta para cima e para baixo trocam de pista. Seta para frente e para trás fazem a moto empinar e pode ser uma vantagem em alguns casos.</p>
+
+<p>O jogo é simples, mas divertido. Saber regular a aceleração com a empinada da moto, saber como a sua moto vai desempenhar em cada obstáculo, e ter que desviar de pistas para evitar obstáculos é o mínimo.</p>
+
+<p>Como disse, em menos de 50 minutos fiz tudo no game, mas aí vem a parte que pode te deixar horas jogando o game, o modo edição de fase. Quando criança eu adorava montar fases e jogar nelas, acho que foi o primeiro jogo com editor de fases que eu joguei na vida. Era muito bom.</p>
+
+<p>Como adulto, 42 anos depois do lançamento deste jogo, achei ele bem trivial, simples e tem uma boa proposta, mas também entrega pouco. Recomendo só por nostalgia, não é um jogo que vale muito seu tempo. Em 10-15 minutos você aprende a jogar e equilibrar suas acelerações, e depois é só bater seus recordes.</p>
+
+<p>Um jogo atemporal, mas que entrega pouca variação de jogabilidade. Nos anos 80 até que era inovador, hoje vale a pena investir seu tempo em experiências melhores.</p>
+
+      
+        <!-- Botão integrado mantendo a classe e destino padrão do seu blog -->
+        <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
+    </div>
+</body>
+</html>
