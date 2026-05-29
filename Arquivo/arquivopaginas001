@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODAS AS POSTAGENS DO BLOG</title>
+<link rel="alternate" type="application/rss+xml" title="Feed RSS - Felipe Brasil Blog" href="/feed.xml" />
+    
+    <style>
+        /* Estilos Globais baseados no SITEFELIPE */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', sans-serif; 
+        }
+        
+        body { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px; 
+            background-color: #f2f5f3; /* Fundo esverdeado claro do SITEFELIPE */
+            color: #1a1a1a; 
+        }
+
+        /* Container Principal (Estilo do Card do SITEFELIPE) */
+        .container { 
+            width: 100%;
+            max-width: 740px; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Alinhamento do Contador de Visitas */
+        .contador-visitas {
+            margin-bottom: 15px;
+        }
+
+        /* Título do Blog (Estilo H1 do SITEFELIPE) */
+        h1 { 
+            font-size: 1.8rem; 
+            margin-bottom: 20px; 
+            color: #2d4a31; 
+            text-align: center;
+        }
+
+        /* --- GRUPO DE BOTÕES EM LINHA (SITEFELIPE) --- */
+        .menu-botoes {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .btn-menu {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 8px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            flex: 1;
+            max-width: 120px;
+        }
+
+        .btn-menu:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Tabela Principal de Entradas (Estilo do SITEFELIPE) */
+        .tabela-principal {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1rem;
+            margin: 15px 0 10px 0;
+        }
+
+        .tabela-principal th, .tabela-principal td {
+            text-align: left;
+            padding: 12px 10px;
+            border-bottom: 1px solid #e8eee9;
+            color: #444;
+        }
+
+        .tabela-principal th {
+            color: #7cb382;
+            font-weight: 600;
+            background: transparent;
+            border-bottom: 2px solid #7cb382;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* Ajuste de larguras das colunas da tabela */
+        .tabela-principal td:nth-child(1) { width: 12%; color: #888; font-size: 0.9rem; }
+        .tabela-principal td:nth-child(2) { width: 50%; }
+        .tabela-principal td:nth-child(3) { width: 20%; }
+        .tabela-principal td:nth-child(4) { width: 18%; text-align: right; color: #666; }
+        .tabela-principal th:nth-child(4) { text-align: right; }
+
+        /* Links Gerais */
+        a { 
+            color: #7cb382; 
+            text-decoration: none; 
+            font-weight: 500; 
+        }
+        a:hover { 
+            text-decoration: underline; 
+            color: #5e8c63; 
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; border-radius: 12px; }
+            h1 { font-size: 1.5rem; }
+            .menu-botoes { gap: 6px; }
+            .btn-menu { padding: 8px 10px; font-size: 0.85rem; }
+            .tabela-principal { font-size: 0.85rem; }
+            .tabela-principal th, .tabela-principal td { padding: 8px 4px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="contador-visitas">
+    <img src="https://hitscounter.dev/api/hit?url=felipebrasilblog.github.io&label=Visitantes&icon=broadcast&color=%23198754&message=&style=social&tz=Brazil%2FEast" alt="Contador de Visitas">
+</div>
+
+    <a href="https://felipebrasilblog.github.io/feed.xml" class="btn-rss" target="_blank">
+    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 2px;"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+    RSS Feed
+</a>
+
+    
+<div class="container">
+    <h1>Postagens #0001 a #0050</h1>
+
+    <div class="menu-botoes">
+        <a href="/Cabecalho/sobre.html" class="btn-menu">Sobre</a>
+        <a href="/Cabecalho/temas.html" class="btn-menu">Temas</a>
+        <a href="/Cabecalho/arquivo.html" class="btn-menu">Arquivo</a>
+    </div>
+
+    <table class="tabela-principal">
+        <thead>
+            
+            <tr>
+                <th>Cód</th>
+                <th>Título do Artigo</th>
+                <th>Categoria</th>
+                <th style="text-align: right;">Data</th>
+            </tr>
+        </thead>
+        <tbody>
+                     <tr>
+                <td>#0050</td>
+                <td><a href="/Entradas/0050.html">PAEE 2026 Gabriel de Lara – EM</a></td>
+                <td><a href="/Classes/escola.html">Escola</a></td>
+                <td style="text-align: right;">29/05/2026</td>
+            </tr>
+               <tr>
+                    <td>#0049</td>
+                    <td><a href="/Entradas/0049.html">Excitebike - NES</a></td>
+                    <td><a href="/Classes/games.html">Games</a></td>
+                    <td>28/05/2026</td>
+                </tr>
+                        <tr>
+                    <td>#0048</td>
+                    <td><a href="/Entradas/0048.html">Glaucoma?</a></td>
+                    <td><a href="/Classes/impressoes.html">Impressões</a></td>
+                    <td>27/05/2026</td>
+                </tr>
+                      <tr>
+                <td>#0047</td>
+                <td><a href="/Entradas/0047.html">Gadgets Necessários</a></td>
+                <td><a href="/Classes/tecnologia.html">Tecnologia</a></td>
+                <td style="text-align: right;">26/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0046</td>
+                <td><a href="/Entradas/0046.html">Contra - NES</a></td>
+                <td><a href="/Classes/games.html">Games</a></td>
+                <td style="text-align: right;">25/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0045</td>
+                <td><a href="/Entradas/0045.html">Welcome on board</a></td>
+                <td><a href="/Classes/inenglish.html">In English</a></td>
+                <td style="text-align: right;">24/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0044</td>
+                <td><a href="/Entradas/0044.html">Habemus RSS</a></td>
+                <td><a href="/Classes/metablog.html">Metablog</a></td>
+                <td style="text-align: right;">23/05/2026</td>
+            </tr>
+             <tr>
+                <td>#0043</td>
+                <td><a href="/Entradas/0043.html">Mudanças de design do blog</a></td>
+                <td><a href="/Classes/metablog.html">Metablog</a></td>
+                <td style="text-align: right;">22/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0042</td>
+                <td><a href="/Entradas/0042.html">Ensino estruturado</a></td>
+                <td><a href="/Classes/educacao.html">Educação</a></td>
+                <td style="text-align: right;">20/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0041</td>
+                <td><a href="/Entradas/0041.html">Quase fui Clubber</a></td>
+                <td><a href="/Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">19/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0040</td>
+                <td><a href="/Entradas/0040.html">Pirataria, minhas regras</a></td>
+                <td><a href="/Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">13/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0039</td>
+                <td><a href="/Entradas/0039.html">O declínio de um Hobby</a></td>
+                <td><a href="/Classes/games.html">Games</a></td>
+                <td style="text-align: right;">11/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0038</td>
+                <td><a href="/Entradas/0038.html">Diploma de Pedagogia Uninter</a></td>
+                <td><a href="/Classes/educacao.html">Educação</a></td>
+                <td style="text-align: right;">10/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0037</td>
+                <td><a href="/Entradas/0037.html">Top 100 artistas musicais</a></td>
+                <td><a href="/Classes/musicas.html">Músicas</a></td>
+                <td style="text-align: right;">09/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0036</td>
+                <td><a href="/Entradas/0036.html">Contra as Métricas</a></td>
+                <td><a href="/Classes/metablog.html">Metablog</a></td>
+                <td style="text-align: right;">09/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0035</td>
+                <td><a href="/Entradas/0035.html">2026 Abril</a></td>
+                <td><a href="/Classes/diario.html">Diário</a></td>
+                <td style="text-align: right;">03/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0034</td>
+                <td><a href="/Entradas/0034.html">Colecionando PCs</a></td>
+                <td><a href="/Classes/tecnologia.html">Tecnologia</a></td>
+                <td style="text-align: right;">02/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0033</td>
+                <td><a href="/Entradas/0033.html">Magic $$$</a></td>
+                <td><a href="/Classes/jogos.html">Jogos</a></td>
+                <td style="text-align: right;">02/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0032</td>
+                <td><a href="/Entradas/0032.html">Estudar Japonês?</a></td>
+                <td><a href="/Classes/japones.html">Japonês</a></td>
+                <td style="text-align: right;">01/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0031</td>
+                <td><a href="/Entradas/0031.html">Domesticando o Youtube</a></td>
+                <td><a href="/Classes/tecnologia.html">Tecnologia</a></td>
+                <td style="text-align: right;">01/05/2026</td>
+            </tr>
+            <tr>
+                <td>#0030</td>
+                <td><a href="/Entradas/0030.html">Voltando ao Japonês</a></td>
+                <td><a href="/Classes/japones.html">Japonês</a></td>
+                <td style="text-align: right;">27/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0029</td>
+                <td><a href="/Entradas/0029.html">Nostalgia (de novo)</a></td>
+                <td><a href="/Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">25/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0028</td>
+                <td><a href="Entradas/0028.html">Hobby de leitura</a></td>
+                <td><a href="Classes/livros.html">Livros</a></td>
+                <td style="text-align: right;">25/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0027</td>
+                <td><a href="Entradas/0027.html">O problema dos jogos para mim hoje</a></td>
+                <td><a href="Classes/jogos.html">Jogos</a></td>
+                <td style="text-align: right;">24/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0026</td>
+                <td><a href="Entradas/0026.html">Linux Mint xfce (2026)</a></td>
+                <td><a href="Classes/tecnologia.html">Tecnologia</a></td>
+                <td style="text-align: right;">20/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0025</td>
+                <td><a href="Entradas/0025.html">Shows musicais</a></td>
+                <td><a href="Classes/musicas.html">Músicas</a></td>
+                <td style="text-align: right;">19/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0024</td>
+                <td><a href="Entradas/0024.html">1h de consumo</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">18/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0023</td>
+                <td><a href="Entradas/0023.html">Montando um miniPC offline</a></td>
+                <td><a href="Classes/tecnologia.html">Tecnologia</a></td>
+                <td style="text-align: right;">17/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0022</td>
+                <td><a href="Entradas/0022.html">Mudança de setup</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">16/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0021</td>
+                <td><a href="Entradas/0021.html">Back to basics</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">15/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0020</td>
+                <td><a href="Entradas/0020.html">Magic the gathering</a></td>
+                <td><a href="Classes/jogos.html">Jogos</a></td>
+                <td style="text-align: right;">14/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0019</td>
+                <td><a href="Entradas/0019.html">Teatro</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">13/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0018</td>
+                <td><a href="Entradas/0018.html">Relógios</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">13/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0017</td>
+                <td><a href="Entradas/0017.html">Abril sem computador (fail)</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">12/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0016</td>
+                <td><a href="Entradas/0016.html">Férias forçadas 2026</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">11/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0015</td>
+                <td><a href="Entradas/0015.html">2026 Março</a></td>
+                <td><a href="Classes/diario.html">Diário</a></td>
+                <td style="text-align: right;">05/04/2026</td>
+            </tr>
+            <tr>
+                <td>#0014</td>
+                <td><a href="Entradas/0014.html">Blindado de bosta</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">30/03/2026</td>
+            </tr>
+            <tr>
+                <td>#0013</td>
+                <td><a href="Entradas/0013.html">Já deu esse Youtube</a></td>
+                <td><a href="Classes/tecnologia.html">Tecnologia</a></td>
+                <td style="text-align: right;">28/03/2026</td>
+            </tr>
+            <tr>
+                <td>#0012</td>
+                <td><a href="Entradas/0012.html">Abril sem computador (prólogo)</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">28/03/2026</td>
+            </tr>
+            <tr>
+                <td>#0011</td>
+                <td><a href="Entradas/0011.html">Loterias</a></td>
+                <td><a href="Classes/jogos.html">Jogos</a></td>
+                <td style="text-align: right;">26/03/2026</td>
+            </tr>
+            <tr>
+                <td>#0010</td>
+                <td><a href="Entradas/0010.html">Nostalgia Gamer</a></td>
+                <td><a href="Classes/games.html">Games</a></td>
+                <td style="text-align: right;">25/03/2026</td>
+            </tr>
+            <tr>
+                <td>#0009</td>
+                <td><a href="Entradas/0009.html">Sentimentos no tabuleiro</a></td>
+                <td><a href="Classes/xadrez.html">Xadrez</a></td>
+                <td style="text-align: right;">23/03/2026</td>
+            </tr>
+            <tr>
+                <td>#0008</td>
+                <td><a href="Entradas/0008.html">Decisões a tomar</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">22/03/2026</td>
+            </tr>
+            <tr>
+                <td>#0007</td>
+                <td><a href="Entradas/0007.html">Até quanto você paga?</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">20/03/2026</td>
+            </tr>
+            <tr>
+                <td>#0006</td>
+                <td><a href="Entradas/0006.html">Celular no bolso</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">02/03/2026</td>
+            </tr>
+            <tr>
+                <td>#0005</td>
+                <td><a href="Entradas/0005.html">A bolha do outro no rush do interbairros</a></td>
+                <td><a href="Classes/cronicas.html">Crônicas</a></td>
+                <td style="text-align: right;">24/02/2026</td>
+            </tr>
+            <tr>
+                <td>#0004</td>
+                <td><a href="Entradas/0004.html">CAPSULE - Haikara Girl (2001)</a></td>
+                <td><a href="Classes/musicas.html">Músicas</a></td>
+                <td style="text-align: right;">22/02/2026</td>
+            </tr>
+            <tr>
+                <td>#0003</td>
+                <td><a href="Entradas/0003.html">Um caderno para todos governar</a></td>
+                <td><a href="Classes/impressoes.html">Impressões</a></td>
+                <td style="text-align: right;">21/02/2026</td>
+            </tr>
+            <tr>
+                <td>#0002</td>
+                <td><a href="Entradas/0002.html">Donkey Kong Country</a></td>
+                <td><a href="Classes/games.html">Games</a></td>
+                <td style="text-align: right;">19/02/2026</td>
+            </tr>
+            <tr>
+                <td>#0001</td>
+                <td><a href="Entradas/0001.html">O início do Blog</a></td>
+                <td><a href="Classes/metablog.html">Metablog</a></td>
+                <td style="text-align: right;">19/02/2026</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
