@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artes preferidas da coleção Alpha MTG</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            min-height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start;     
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            padding: 40px 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+            margin: 40px auto;
+            /* Garante que os elementos flex internos respeitem o alinhamento central */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Garante que os parágrafos ocupem a largura total do container */
+        p {
+            width: 100%;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-weight: normal;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+
+        /* CENTRALIZAÇÃO DO TÍTULO DA TABELA E DA TABELA */
+        h2 {
+            text-align: center; 
+            margin-top: 40px;
+            color: #222;
+        }
+
+        table {
+            margin: 20px auto; 
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px; 
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        ul {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        li p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* --- BOTÃO RETORNAR (Estilo SITEFELIPE) --- */
+        .btn-retornar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .btn-retornar:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* --- NOVA FORMATAÇÃO DA GALERIA (COMPATÍVEL COM MOBILE) --- */
+        .galeria-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Divide o ecrã em duas colunas iguais, mesmo no telemóvel */
+            gap: 15px; /* Espaçamento ideal entre as imagens */
+            width: 100%; /* Ocupa toda a largura interna do container */
+            margin-bottom: 20px;
+        }
+
+        .galeria-container img {
+            display: block;
+            width: 100%; /* Faz a imagem ocupar toda a largura da sua coluna */
+            height: auto; /* Mantém a proporção original da imagem para não distorcer */
+            border-radius: 6px; /* Um leve arredondamento para combinar com o seu container */
+        }
+
+        /* Ajustes Responsivos para Mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 25px 15px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+
+            table {
+                width: 100%; 
+            }
+
+            .btn-retornar {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                width: 100%;
+            }
+            
+            /* Ajusta ligeiramente o espaçamento no telemóvel para aproveitar melhor o ecrã */
+            .galeria-container {
+                gap: 10px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Artes preferidas da coleção Alpha MTG</h1>
+        <h3>02/06/2026 Jogos</h3>
+      
+<p>
+Estas são minhas artes preferidas da coleção inicial de cartas de Magic the Gathering, acho que estas cartas são de 1993 e representam o primeiro pacote de cartas de magic com 295 cartas. Pessoalmente tenho muita nostalgia vendo estas cartas, que foram impressas também em edições futuras. Eu tinha algumas destas mas com borda branca, da edição revisada.
+</p>
+
+        <div class="galeria-container">
+            <img src="https://cards.scryfall.io/large/front/b/7/b7b7aa34-b4f8-41b4-82ce-ab2e204c3bf4.jpg?1559591407" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/9/2/92274971-7c4a-4326-b0fe-75e2d124f718.jpg?1559591491" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/b/0/b0faa7f2-b547-42c4-a810-839da50dadfe.jpg?1559591477" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/1/9/19499cb7-eccb-4e69-af32-6002d447a160.jpg?1559591420" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/c/4/c4300d24-1cae-4dd5-be7e-38cc677cf5bd.jpg?1559591399" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/a/6/a6d492b7-b0b3-420e-8d00-6dacb11de77e.jpg?1559591471" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/2/9/2926777a-4f6e-4965-ba83-22cf7df02602.jpg?1559591307" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/2/1/210c4a90-fc7a-4c76-aeaa-20a005e45386.jpg?1559591644" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/b/6/b6cef408-5b4b-49f6-9531-be544815b93f.jpg?1559591484" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/5/7/576e811f-26a3-4a7c-bd13-3b1cc3e184eb.jpg?1559591634" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/e/b/ebb6664d-23ca-456e-9916-afcd6f26aa7f.jpg?1559591495" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/7/1/711d4d54-5520-4de8-9b93-79902ed8e562.jpg?1559591474" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/b/7/b7623c00-144b-4a8f-9c6c-f5e9e4f65ece.jpg?1559591696" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/d/5/d573ef03-4730-45aa-93dd-e45ac1dbaf4a.jpg?1559591645" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/f/e/fefbf149-f988-4f8b-9f53-56f5878116a6.jpg?1559591401" alt="Carta Magic">
+            <img src="https://cards.scryfall.io/large/front/d/4/d4f1cc9e-4f99-4c26-ac1b-8ef069fa8ceb.jpg?1559591371" alt="Carta Magic">
+        </div>
+      
+        <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
+    </div>
+</body>
+</html>
