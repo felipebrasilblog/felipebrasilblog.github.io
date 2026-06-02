@@ -5,6 +5,13 @@
     <link>https://felipebrasilblog.github.io</link>
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
+       <item>
+      <title>#0059 - Reddit, uso atual</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0059.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0059.html</guid>
+      <category>Tecnologia</category>
+      <description>Artigo publicado na categoria Tecnologia em 02/06/2026.</description>
+    </item>
      <item>
       <title>#0058 - Artes preferidas da coleção Alpha MTG</title>
       <link>https://felipebrasilblog.github.io/Entradas/0058.html</link>
