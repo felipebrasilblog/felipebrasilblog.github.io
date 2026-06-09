@@ -5,6 +5,13 @@
     <link>https://felipebrasilblog.github.io</link>
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
+      <item>
+      <title>#0067 - Adoro o 404 do lichess</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0067.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0067.html</guid>
+      <category>Xadrez</category>
+      <description>Artigo publicado na categoria Xadrez em 09/06/2026.</description>
+    </item>
     <item>
       <title>#0066 - Jogos virada de chave</title>
       <link>https://felipebrasilblog.github.io/Entradas/0066.html</link>
