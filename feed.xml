@@ -6,6 +6,13 @@
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
 
+     <item>
+      <title>#0070 - Desinteresse e Metas</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0070.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0070.html</guid>
+      <category>Impressões</category>
+      <description>Artigo publicado na categoria Impressões em 17/06/2026.</description>
+    </item>
        <item>
       <title>#0069 - Infindável</title>
       <link>https://felipebrasilblog.github.io/Entradas/0069.html</link>
