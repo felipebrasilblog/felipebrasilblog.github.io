@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doomscrolling</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            min-height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start;     
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            padding: 40px 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-imagem {
+            text-align: center;
+            margin: 20px 0;
+            width: 100%; /* Garante que o container da imagem ocupe toda a largura disponível */
+        }
+
+        /* AJUSTE DA IMAGEM RESPONSIVA AQUI */
+        .container-imagem img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px; /* Opcional: deixa as bordas suavemente arredondadas combinando com o layout */
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 100%;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-weight: normal;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center; 
+            margin-top: 40px;
+            color: #222;
+        }
+
+        table {
+            margin: 20px auto; 
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px; 
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        ul {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        li p {
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .btn-retornar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .btn-retornar:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 25px 20px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            table {
+                width: 100%; 
+            }
+
+            .btn-retornar {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Doomscrolling</h1>
+        <h3>20/06/2026 Tecnologia</h3>
+      
+<p>Acho que estou curado desta condição de vício em rolagem de telas.</p>
+
+<p>Bom, eu ainda uso youtube, há uma rolagem mas acho que após 200 recomendações a página tem um fim, sim o youtube no desktop trava a partir de um certo número de recomendações. Ela não roda indefinidamente, somente na aba inscrições é que ela rola eternamente cronologicamente com os vídeos dos canais que você assinou.</p>
+
+<p>Fora isto, shorts eu realmente não uso, nem no youtube, nem em lugar nenhum. Não possuir conta de instagram ativa nem nunca ter feito conta no tiktok para mim é normal. Não considero libertador, vejo só como algo que não uso.</p>
+
+<p>Mas sinto pena de alguém rodando feed de instagram ou tik tok, é uma total falta de conhecimento de como as tecnologias funcionam. Sim, é viciante, a um nível absurdo, tudo iniciou com redes sociais e a possibilidade de um refresh mágico que ativasse uma notificação positiva, um comentário de algo que postou, um like no seu like, etc… Esta mecânica existia desde os antigos blogs e fotologs, passando por orkut e facebook. Você entrava na página dando “refresh” para buscar uma mudança, uma notificação, no seu navegador.</p>
+
+<p>Com os smartphones as notificações são por push, aquela curtida além de ser notificada tem um barulhinho próprio. Aquela notificação que antes era no navegador e esperava avidamente por seu F5 para aparecer, agora aparece imediatamente quando ocorre.</p>
+
+<p>E os feeds, sempre foram um problema. Por volta de 2010 criaram uma coisa revolucionária chamada feed de rolagem automática. Antigamente o conteúdo era dividido em páginas estáticas, agora é alimentado continuamente. Agora rolar é eterno, nunca acaba, sempre terá mais conteúdo, baseado em seus inputs para um algoritmo. Algoritmo personalizado, cada um tem o seu, baseado em seu histórico na plataforma e nas suas pesquisas. Potencializados por gravações de áudio e demais coletas de dados em paralelo enquanto seu microfone fica aberto ocasionalmente.</p>
+
+<p>E o doomscrooling? A rolagem que suga horas de sua vida e que realmente não te adiciona nada? Horas rolando a tela e você nem sabe compor um texto sobre os 5 vídeos curtos que melhoraram sua vida nesta última hora em que está rolando indefinidamente.</p>
+
+<p>Como alguém que puxa uma alavanca caça níquel, a recompensa do próximo vídeo pode ser positiva ou negativa. Normalmente positiva pois é calibrada segundo o que você já vem acessando. É mais fácil receber mais do mesmo conteúdo como reforço positivo que ter que aprender algo novo e diferente.</p>
+
+<p>Rolar a tela é o mesmo mecanismo que apertar um botão e esperar um novo resultado. É uma chamada ao estímulo e dificilmente será negativo ou de baixo prazer, afinal de contas, um cliente insatisfeito iria sair do app. Aqui a idéia é manter você ativamente e constantemente entretido. Mesmo que daqui a 10 minutos você não possa nem tecer uma opinião sobre o que assistiu, porque pra falar a verdade, você nem se lembra o viu há 20 minutos atrás. E o tempo passa. Sua atenção nas propagandas fica.</p>
+
+      
+        <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
+    </div>
+</body>
+</html>
