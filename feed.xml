@@ -5,7 +5,13 @@
     <link>https://felipebrasilblog.github.io</link>
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
-
+ <item>
+      <title>#0072 - Doomscrolling</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0072.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0072.html</guid>
+      <category>Tecnologia</category>
+      <description>Artigo publicado na categoria Tecnologia em 20/06/2026.</description>
+    </item>
     <item>
       <title>#0071 - BD-1</title>
       <link>https://felipebrasilblog.github.io/Entradas/0071.html</link>
