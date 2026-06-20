@@ -6,6 +6,13 @@
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
 
+    <item>
+      <title>#0071 - BD-1</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0071.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0071.html</guid>
+      <category>In English</category>
+      <description>Artigo publicado na categoria In English em 20/06/2026.</description>
+    </item>
      <item>
       <title>#0070 - Desinteresse e Metas</title>
       <link>https://felipebrasilblog.github.io/Entradas/0070.html</link>
