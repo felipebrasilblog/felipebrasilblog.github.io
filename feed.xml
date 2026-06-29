@@ -6,6 +6,13 @@
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
       <item>
+      <title>#0075 - Kit de trabalho na escola</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0075.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0075.html</guid>
+      <category>Escola</category>
+      <description>Artigo publicado na categoria Escola em 29/06/2026.</description>
+    </item>
+      <item>
       <title>#0074 - Informação Inútil</title>
       <link>https://felipebrasilblog.github.io/Entradas/0074.html</link>
       <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0074.html</guid>
