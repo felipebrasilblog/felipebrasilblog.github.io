@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit de trabalho na escola</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            min-height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start;     
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            padding: 40px 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-imagem {
+            text-align: center;
+            margin: 20px 0;
+            width: 100%; /* Garante que o container da imagem ocupe toda a largura disponível */
+        }
+
+        /* AJUSTE DA IMAGEM RESPONSIVA AQUI */
+        .container-imagem img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px; /* Opcional: deixa as bordas suavemente arredondadas combinando com o layout */
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 100%;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-weight: normal;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center; 
+            margin-top: 40px;
+            color: #222;
+        }
+
+        table {
+            margin: 20px auto; 
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px; 
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        ul {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        li p {
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .btn-retornar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .btn-retornar:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 25px 20px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            table {
+                width: 100%; 
+            }
+
+            .btn-retornar {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kit de trabalho na escola</h1>
+        <h3>29/06/2026 Escola</h3>
+
+      <p>Pois é, comecei a lecionar como PAEE agora em Junho. Inicialmente fui para a escola com minha mochila Wolf grayman, mas ela é muito pesada para o que eu precisava. Troquei por minha bolsa tote/carteiro de lona que peguei ano passado e era mais leve. No entanto, para o dia a dia não é confortável. Andar 50 minutos por dia na rua com ela é um tanto ruim, ela pesa para um lado, e no geral não é uma boa experiência.</p>
+
+<p>Então comprei uma Lenovo 15,6” Laptop Casual Toploader T210. 75 reais, achei baratinho. Uma maleta simples com o tamanho de um notebook de 15 polegadas, que permite que eu leve tudo que preciso sem grandes problemas.</p>
+
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/Imagens/0075.jpg" alt="Maleta Lenovo T210" style="max-width: 100%; height: auto;">
+</div>
+
+<p>E o que preciso levar hoje em dia?</p>
+
+<ul>
+    <li><strong>Samsung Chromebook 4:</strong> Um chromebook com 4GB de RAM, processador Celeron antigo e 64GB de HD. Uma máquina muito fraca, mas que para editar coisas no Google Docs diretamente no Drive é ótima. Barata, acho que me custou uns 1100 reais alguns anos atrás, o preço de um celular de entrada. Me atende bem. Não acho prudente levar um notebook caro para a escola, e este aqui é barato e ainda tem uma bateria de umas 12h.</li>
+    <li><strong>Carregador USB 20W para celular/Chromebook:</strong> É um carregador simples mesmo, já me quebrou o galho uma vez em que a bateria do Chromebook estava acabando e eu deixei 1 aula carregando e tive bateria para o restante do dia.</li>
+    <li><strong>Guarda-chuva:</strong> Uma sombrinha simples, a minha está até sem cabo. Carrego ela em uma sacola para não molhar tudo que está dentro da mala.</li>
+    <li><strong>Um estojo de canetas:</strong> Tenho canetas, mas uso elas pouco, estão ali mais para emprestar para meus alunos que não trazem material do que realmente para corrigir provas.</li>
+    <li><strong>Pastas plásticas:</strong> Tenho 2 pastas, uma para levar pequenas quantidade de documentos A4 e a outra já é mais espessa, e uso tanto de case pro meu Chromebook quanto para guardar atividades e provas para passar para meus alunos.</li>
+    <li><strong>Caderno pequeno estilo Moleskine:</strong> Levo este caderno para anotações rápidas, mas para te falar a verdade o uso muito pouco.</li>
+</ul>
+
+<p>O único problema que tenho hoje é a garrafa de água. Eu a carrego separado na mão e ainda não descobri uma forma de carrega-la com a maleta porque não há como transportá-la junto.</p>
+        <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
+    </div>
+</body>
+</html>
