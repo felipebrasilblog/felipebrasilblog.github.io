@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como fazer um blog?</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            min-height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start;     
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            padding: 40px 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-imagem {
+            text-align: center;
+            margin: 20px 0;
+            width: 100%; /* Garante que o container da imagem ocupe toda a largura disponível */
+        }
+
+        /* AJUSTE DA IMAGEM RESPONSIVA AQUI */
+        .container-imagem img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px; /* Opcional: deixa as bordas suavemente arredondadas combinando com o layout */
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 100%;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-weight: normal;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center; 
+            margin-top: 40px;
+            color: #222;
+        }
+
+        table {
+            margin: 20px auto; 
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px; 
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        ul {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        li p {
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .btn-retornar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .btn-retornar:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 25px 20px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            table {
+                width: 100%; 
+            }
+
+            .btn-retornar {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Como fazer um blog?</h1>
+        <h3>01/07/2026 Metablog</h3>
+      
+<p>Existem várias formas de se montar um blog, e vários motivos para se ter um blog. Vamos por partes.</p>
+
+<p>Algumas pessoas ainda acham que em 2026 blogs dão dinheiro, e que será ótimo monetizar com propagandas por todos os lados, afiliados, produtos, lojinha, etc.</p>
+
+<p>Sinto te informar, mas a porcentagem dos que conseguem isto é ínfima. E além de tudo leva tempo, anos, décadas. Blogs escritos por várias pessoas sobre tecnologia, carros, esportes, viagens, etc. Existem. Sim, existem, mas hoje normalmente vem atrelado a uma outra rede social, X, instagram, TikTok, facebook, youtube. Normalmente o site é um adicional ao canal ou a rede social, e não o contrário.</p>
+
+<p>Já com booktubers, conheço vários canais em que o blog do canal existe e veio antes de tudo. Mas o grosso da produtividade e da grana vem das redes sociais. Há como monetizar com clubes do livro pagos, mantenedores, etc. Mas o blog normalmente se apaga no meio de tantos estímulos e possibilidades de propaganda e consumo.</p>
+
+<p>Tudo bem, você quer ter um blog mas não quer monetizar. Então gastará dinheiro meu amigo. Pouco, mas gastará uma grana. Um servidor dos seus arquivos e um domínio (endereço web) para poder ter ele funcionando perfeitamente. O custo disto é baixo, já vamos ver...</p>
+
+<p>Eu gasto com este meu blog zero reais de domínio e zero reais de servidor. Para meu site pessoal pago 34 reais anuais pelo domínio www.felipebf.com.br , e hospedo no github. Github é um site com repositórios de arquivos usado prioritariamente por desenvolvedores de software e artistas digitais. É um caldeirão de programas que podem ser acessados e todos ficam dentro deste site.</p>
+
+<p>O github sites possibilita hospedar os arquivos de um site nesta plataforma, totalmente gratuitamente. Não sei exatamente quantos gigas você pode ter em um projeto, mas li em algum lugar que o recomendado é 1GB, e ele começa a travar e pedir privilégios maiores, mensalidades e afins, a partir de 10GB de conteúdo. Não é um google drive para você despejar tudo lá dentro. Mas normalmente páginas e posts de blogs pesam de 50 a 500kb por página mais as imagens que você adicionar.</p>
+
+<p>Ok, mas tenho que aprender a programar? Teoricamente sim, se quiser algo funcional e apresentável. Saber estrutura de pastas, como linkar vídeos e imagens, e tal, bem básico. Depois que configurar seu layout é só copiar padrões e usar pedaços de postagens que deram certas para guiar seus posts.</p>
+
+<p>HTML e CSS, terá que aprender o básico destas duas linguagens de paginação. Não são linguagens de programação, são beeem mais simples. Se eu aprendi, qualquer um aprende. Existem cursos gratuitos pela web, e se dedicando bem, em 15 dias você consegue se virar bem e entender os códigos.</p>
+
+<p>E a I.A. é sua amiga. Eu testei vários layouts cores, botões, tabelas, fontes, com inteligência artificial. Gastei um bom tempo, mas deixei como eu queria. A I.A. também te ajuda a deixar tudo responsivo para ser acessado em celulares e tablets (coisa que meu cursinho básico não ensinava). I.A. me ajuda bastante na formatação de tabelas, e até pra colocar tags de parágrafo eu não tenho muita paciência e peço pra I.A. fazer. Trabalho de 10 minutos reduzido para 3 segundos.</p>
+
+<p>Eu só não uso I.A. na parte criativa dos textos. O conteúdo não tem nada de I.A., nas vezes que tentei utilizar ela transgrediu completamente meu conteúdo. Para tarefas mecânicas I.A. é uma benção, pra tarefas de criação e criatividade escrevo eu mesmo.</p>
+
+<p>Ok, você quer um blog, mas não quer aprender HTML e CSS. Tudo bem, existe hoje o wordpress e o blogger que te auxiliam nisto. Você ganha comodidade para postar, mas perde controle dos processos. E claro, uma árvore de dados no github tem muito mais longevidade que estas plataformas. Sabendo como os dados funcionam você pode alterar, reformar, apagar, formatar, fazer de tudo. Mas para uns a barreira dos códigos é um problema, mas não se deixe abater por isto, faça seu blog em uma das plataformas grandes.</p>
+
+<p>E depois de montado a estrutura, os posts, o que fazer?</p>
+
+<p>Pra te falar a verdade não sei, estou neste processo agora, conhecendo melhor outros blogs pessoais, roubando uma ideia aqui e ali, implementando coisas que enriqueçam meu blog.</p>
+
+<p>Público é a coisa que menos me interessa. Gosto de escrever para manter arquivado. Gosto de escrever para aprender a escrever, melhorar minha comunicação e criatividade.</p>
+
+<p>Acho que entrar nesta buscando sucesso financeiro é uma furada, e buscando o grande público também. O grande público está nas redes sociais tradicionais rolando feed. A galera dos blogs pessoais está em outra vibe, posso te garantir.</p>
+      
+        <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
+    </div>
+</body>
+</html>
