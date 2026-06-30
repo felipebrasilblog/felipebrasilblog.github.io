@@ -6,6 +6,13 @@
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
     <item>
+      <title>#0077 - Como fazer um blog?</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0077.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0077.html</guid>
+      <category>Metablog</category>
+      <description>Artigo publicado na categoria Metablog em 01/07/2026.</description>
+    </item>
+    <item>
       <title>#0076 - 2026 Junho</title>
       <link>https://felipebrasilblog.github.io/Entradas/0076.html</link>
       <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0076.html</guid>
