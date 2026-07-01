@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Felipe Brasil Felicio</title>
-       <link rel="alternate" type="application/rss+xml" title="Feed RSS - Felipe Brasil Blog" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Feed RSS - Felipe Brasil Blog" href="/feed.xml" />
     
     <style>
         /* Estilos Globais baseados no SITEFELIPE */
@@ -136,7 +136,7 @@
             letter-spacing: 1px;
         }
 
-        /* Estilo específico para a linha de aviso superior da tabela */
+        /* Estilo específico para a linha de aviso superior della tabela */
         .tabela-aviso {
             font-size: 0.95rem;
             color: #555;
@@ -166,12 +166,30 @@
             color: #5e8c63; 
         }
 
-        /* --- CONFIGURAÇÃO ADICIONADA: BOTÃO IN ENGLISH --- */
+        /* --- CONFIGURAÇÃO ADICIONADA: IN ENGLISH + TEXTOS LATERAIS --- */
         .secao-botao-idioma {
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
             margin-top: 20px;
+        }
+
+        .texto-lateral-verde {
+            font-size: 1rem; /* Mesmo tamanho de fonte das linhas da tabela */
+            font-weight: bold;
+            color: #7cb382;
+            width: 30%; /* Garante espaço igual nas laterais para não desalinharem o botão central */
+        }
+
+        /* Garante que o link herde o negrito do container e não o estilo global de links */
+        .texto-lateral-verde a {
+            font-weight: bold;
+            color: #7cb382;
+        }
+
+        .texto-lateral-verde.direita {
+            text-align: right;
         }
 
         .btn-tema {
@@ -206,6 +224,16 @@
             border-color: #436d94; 
         }
 
+        /* --- SEÇÃO DE CRÉDITOS (FORA DO FRAME BRANCO) --- */
+        .creditos-rodape {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #2d4a31; /* Verde escuro */
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
         /* --- RESPONSIVIDADE --- */
         @media (max-width: 600px) {
             body { padding: 10px; }
@@ -215,6 +243,9 @@
             .btn-menu { padding: 8px 10px; font-size: 0.85rem; }
             .tabela-principal { font-size: 0.85rem; }
             .tabela-principal th, .tabela-principal td { padding: 8px 4px; }
+            .secao-botao-idioma { flex-direction: column; gap: 15px; }
+            .texto-lateral-verde { width: 100%; text-align: center; }
+            .texto-lateral-verde.direita { text-align: center; }
             .btn-tema { width: 100%; padding: 12px 8px; font-size: 0.9rem; border-radius: 10px; }
         }
     </style>
@@ -273,7 +304,7 @@
                 <td><a href="/Classes/diario.html">Diário</a></td>
                 <td style="text-align: right;">01/07/2026</td>
             </tr>
-                          <tr>
+                           <tr>
                 <td>#0075</td>
                 <td><a href="/Entradas/0075.html">Kit de trabalho na escola</a></td>
                 <td><a href="/Classes/escola.html">Escola</a></td>
@@ -309,7 +340,7 @@
                 <td><a href="/Classes/impressoes.html">Impressões</a></td>
                 <td style="text-align: right;">17/06/2026</td>
             </tr>
-                  <tr>
+                 <tr>
                 <td>#0069</td>
                 <td><a href="/Entradas/0069.html">Infindável</a></td>
                 <td><a href="/Classes/livros.html">Livros</a></td>
@@ -319,10 +350,22 @@
         </tbody>
     </table>
 
-    <!-- Botão "In English" inserido e centralizado abaixo da tabela -->
+    <!-- Elementos inferiores alinhados na mesma linha -->
     <div class="secao-botao-idioma">
+        <div class="texto-lateral-verde">A.I. Free content</div>
+        
         <a href="/Classes/inenglish.html" class="btn-tema solido-azul">Posts In English here</a>
+        
+        <div class="texto-lateral-verde direita">
+            <a href="blogroll.html">My Blogroll</a>
+        </div>
     </div>
+</div>
+
+<!-- Seção de Créditos centralizada abaixo do frame principal -->
+<div class="creditos-rodape">
+    <div>Créditos a Felipe Brasil Felicio</div>
+    <div>© 2026 - 2026</div>
 </div>
 
 </body>
