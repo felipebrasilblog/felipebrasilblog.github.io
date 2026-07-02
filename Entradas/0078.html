@@ -1,3 +1,8 @@
+Para fazer com que as imagens abram o arquivo original em uma nova página ao serem clicadas, a forma mais limpa e sem necessidade de JavaScript é envolver cada elemento <img> com uma tag de link <a>, utilizando o atributo target="_blank" (que força a abertura em uma nova aba/página) e definindo o href com o mesmo caminho da imagem.
+
+Aqui está o código HTML atualizado com as modificações aplicadas na seção das imagens:
+HTML
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -47,6 +52,18 @@
             border-radius: 4px; /* Opcional: deixa as bordas suavemente arredondadas combinando com o layout */
             display: block;
             margin: 0 auto;
+            transition: transform 0.2s ease; /* Efeito suave opcional ao passar o mouse */
+        }
+
+        /* Opcional: Adiciona um efeito visual e muda o cursor para indicar que é clicável */
+        .container-imagem a {
+            display: inline-block;
+            max-width: 100%;
+        }
+        
+        .container-imagem a:hover img {
+            transform: scale(1.01); /* Leve zoom ao passar o mouse */
+            filter: brightness(0.9); /* Escurece sutilmente */
         }
 
         p {
@@ -177,27 +194,35 @@
         <h3>02/07/2026 Registros</h3>
 
         <div class="container-imagem">
-            <img src="/Imagens/0078(01).jpeg" alt="Quarto">
+            <a href="/Imagens/0078(01).jpeg" target="_blank" rel="noopener noreferrer">
+                <img src="/Imagens/0078(01).jpeg" alt="Quarto">
+            </a>
         </div>
 
-           <div class="container-imagem">
-            <img src="/Imagens/0078(02).jpeg" alt="Quarto">
+        <div class="container-imagem">
+            <a href="/Imagens/0078(02).jpeg" target="_blank" rel="noopener noreferrer">
+                <img src="/Imagens/0078(02).jpeg" alt="Quarto">
+            </a>
         </div>
 
-           <div class="container-imagem">
-            <img src="/Imagens/0078(03).jpeg" alt="Quarto">
+        <div class="container-imagem">
+            <a href="/Imagens/0078(03).jpeg" target="_blank" rel="noopener noreferrer">
+                <img src="/Imagens/0078(03).jpeg" alt="Quarto">
+            </a>
         </div>
 
-           <div class="container-imagem">
-            <img src="/Imagens/0078(04).jpeg" alt="Quarto">
+        <div class="container-imagem">
+            <a href="/Imagens/0078(04).jpeg" target="_blank" rel="noopener noreferrer">
+                <img src="/Imagens/0078(04).jpeg" alt="Quarto">
+            </a>
         </div>
 
-           <div class="container-imagem">
-            <img src="/Imagens/0078(05).jpeg" alt="Quarto">
+        <div class="container-imagem">
+            <a href="/Imagens/0078(05).jpeg" target="_blank" rel="noopener noreferrer">
+                <img src="/Imagens/0078(05).jpeg" alt="Quarto">
+            </a>
         </div>
 
-       
-        
         <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
     </div>
 </body>
