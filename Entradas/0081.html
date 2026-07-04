@@ -77,10 +77,19 @@
             width: 100%;
         }
 
+        /* ALTERAÇÕES DO H2 AQUI */
         h2 {
             text-align: center; 
-            margin-top: 40px;
-            color: #222;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            color: #666;
+            background-color: #f9f9f9; /* Fundo cinza claro */
+            border: 1px solid #ccc;       /* Borda cinza */
+            border-radius: 6px;           /* Bordas arredondadas */
+            padding: 15px;                /* Espaço interno para o texto não sufocar */
+            font-size: 1.2rem;            /* Tamanho idêntico ao h3 */
+            font-weight: normal;          /* Remove o negrito forte padrão do h2 */
+            width: 100%;                  /* Ocupa toda a largura do container */
         }
 
         table {
@@ -153,6 +162,12 @@
             h3 {
                 font-size: 1rem;
                 padding-bottom: 15px;
+            }
+
+            /* Ajuste responsivo para o h2 também */
+            h2 {
+                font-size: 1rem;
+                padding: 10px;
             }
 
             p {
