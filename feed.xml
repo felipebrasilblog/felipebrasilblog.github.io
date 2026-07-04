@@ -5,6 +5,13 @@
     <link>https://felipebrasilblog.github.io</link>
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
+     <item>
+      <title>#0080 - Contra-cultura analógica</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0080.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0080.html</guid>
+      <category>Tecnologia</category>
+      <description>Artigo publicado na categoria Tecnologia em 04/07/2026.</description>
+    </item>
     <item>
       <title>#0079 - Filmes e eu</title>
       <link>https://felipebrasilblog.github.io/Entradas/0079.html</link>
