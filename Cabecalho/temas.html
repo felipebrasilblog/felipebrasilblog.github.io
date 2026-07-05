@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temas | Blog de Felipe Brasil Felicio</title>
-    
     <style>
-        /* Estilos Globais baseados no SITEFELIPE */
         * { 
             margin: 0; 
             padding: 0; 
@@ -21,112 +19,128 @@
             min-height: 100vh;
             margin: 0;
             padding: 20px; 
-            background-color: #f2f5f3; /* Fundo esverdeado claro do SITEFELIPE */
+            background-color: #f2f5f3; 
             color: #1a1a1a; 
         }
 
-        /* Container Principal (Estilo do Card do SITEFELIPE) */
-        .container { 
+        .contador-visitas {
+            margin-bottom: 15px;
+        }
+
+        /* Container Branco Principal unificado */
+        .container-principal {
             width: 100%;
-            max-width: 740px; 
-            background: #fff; 
-            padding: 30px; 
-            border-radius: 20px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
-            margin-top: 20px;
+            max-width: 820px; 
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Alinhamento do Contador de Visitas */
-        .contador-visitas {
-            margin-bottom: 15px;
-        }
-
-        /* Título da Página (Estilo H1 do SITEFELIPE) */
         h1 { 
             font-size: 1.8rem; 
-            margin-bottom: 30px; 
+            margin-bottom: 25px; 
             color: #2d4a31; 
             text-align: center;
         }
 
-        /* --- GRADE DE BOTÕES DE TEMAS --- */
-        .grade-temas {
+        /* --- DISPOSIÇÃO DOS CARDS EM DUAS COLUNAS --- */
+        .grade-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
             width: 100%;
-            margin-top: 10px;
-            margin-bottom: 35px; /* Espaço para o botão de retornar */
+            margin-bottom: 25px;
         }
 
-        .btn-tema {
+        /* --- CARDS DE CATEGORIAS COMPACTOS --- */
+        .categoria-card { 
+            background: #fff; 
+            border-radius: 14px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            overflow: hidden; 
+            border: 1px solid #e2e8e4;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 12px 10px;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 0.95rem;
-            text-decoration: none;
-            color: #fff;
-            transition: all 0.25s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            flex-direction: column;
+        }
+        
+        .categoria-titulo { 
+            background: #7cb382; 
+            color: white; 
+            padding: 10px 15px; 
+            font-size: 0.95rem; 
+            font-weight: bold; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+        }
+        
+        /* Grade interna dos botões (2 colunas horizontais) */
+        .grade-temas { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 8px; 
+            padding: 12px; 
+            background: #fff;
+            flex-grow: 1;
+        }
+        
+        /* Botões padronizados no estilo do botão Educação */
+        .btn-tema { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+            padding: 8px 6px; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            font-size: 0.85rem; 
+            text-decoration: none; 
+            color: #fff; 
+            transition: all 0.2s ease; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        
+        .btn-tema:hover { 
+            transform: translateY(-1px); 
+            box-shadow: 0 3px 6px rgba(0,0,0,0.08); 
         }
 
-        .btn-tema:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-            text-decoration: none;
-        }
-
-        /* --- PALETA DE CORES SÓLIDAS VARIADAS --- */
+        /* --- PALETA DE CORES BASEADA NO PADRÃO DO BOTÃO EDUCAÇÃO --- */
+        .solido-verde { background-color: #7cb382; }
+        .solido-verde:hover { background-color: #629668; }
         
-        /* 1. Verde Original */
-        .solido-verde { background-color: #7cb382; border: 1px solid #7cb382; }
-        .solido-verde:hover { background-color: #629668; border-color: #629668; }
-        
-        /* 2. Azul */
-        .solido-azul { background-color: #5c8ab3; border: 1px solid #5c8ab3; }
-        .solido-azul:hover { background-color: #436d94; border-color: #436d94; }
+        .solido-azul { background-color: #5c8ab3; }
+        .solido-azul:hover { background-color: #436d94; }
 
-        /* 3. Vermelho */
-        .solido-vermelho { background-color: #cc6666; border: 1px solid #cc6666; }
-        .solido-vermelho:hover { background-color: #b34d4d; border-color: #b34d4d; }
+        .solido-vermelho { background-color: #cc6666; }
+        .solido-vermelho:hover { background-color: #b34d4d; }
 
-        /* 4. Laranja */
-        .solido-laranja { background-color: #df8a57; border: 1px solid #df8a57; }
-        .solido-laranja:hover { background-color: #c4703f; border-color: #c4703f; }
+        .solido-laranja { background-color: #df8a57; }
+        .solido-laranja:hover { background-color: #c4703f; }
 
-        /* 5. Roxo */
-        .solido-roxo { background-color: #9b7cb3; border: 1px solid #9b7cb3; }
-        .solido-roxo:hover { background-color: #806296; border-color: #806296; }
+        .solido-roxo { background-color: #9b7cb3; }
+        .solido-roxo:hover { background-color: #806296; }
 
-        /* 6. Ciano / Teal */
-        .solido-ciano { background-color: #5ba3a3; border: 1px solid #5ba3a3; }
-        .solido-ciano:hover { background-color: #3e8585; border-color: #3e8585; }
+        .solido-ciano { background-color: #5ba3a3; }
+        .solido-ciano:hover { background-color: #3e8585; }
 
-        /* 7. Rosa Escuro / Terracota Leve */
-        .solido-rosa { background-color: #c97280; border: 1px solid #c97280; }
-        .solido-rosa:hover { background-color: #ad5765; border-color: #ad5765; }
+        .solido-rosa { background-color: #c97280; }
+        .solido-rosa:hover { background-color: #ad5765; }
 
-        /* 8. Castanho / Marrom */
-        .solido-castanho { background-color: #b38461; border: 1px solid #b38461; }
-        .solido-castanho:hover { background-color: #966947; border-color: #966947; }
+        .solido-castanho { background-color: #b38461; }
+        .solido-castanho:hover { background-color: #966947; }
 
-        /* 9. Amarelo Escuro / Ouro Velho (para dar contraste com texto branco) */
-        .solido-amarelo { background-color: #cca043; border: 1px solid #cca043; }
-        .solido-amarelo:hover { background-color: #b0852a; border-color: #b0852a; }
+        .solido-amarelo { background-color: #cca043; }
+        .solido-amarelo:hover { background-color: #b0852a; }
 
-        /* 10. Cinza Grafite */
-        .solido-cinza { background-color: #6c757d; border: 1px solid #6c757d; }
-        .solido-cinza:hover { background-color: #5a6268; border-color: #5a6268; }
+        .solido-cinza { background-color: #6c757d; }
+        .solido-cinza:hover { background-color: #5a6268; }
 
-
-        /* --- BOTÃO RETORNAR (Estilo SITEFELIPE) --- */
+        /* --- BOTÃO RETORNAR --- */
         .btn-retornar {
             display: inline-flex;
             align-items: center;
@@ -141,23 +155,23 @@
             border: 2px solid #7cb382;
             color: #7cb382;
             cursor: pointer;
-            margin-top: 10px;
+            margin-top: 5px;
         }
 
         .btn-retornar:hover {
             background: #7cb382;
             color: #fff;
-            text-decoration: none;
         }
 
-        /* --- RESPONSIVIDADE --- */
-        @media (max-width: 600px) {
+        /* --- RESPONSIVIDADE ADAPTADA --- */
+        @media (max-width: 680px) {
             body { padding: 10px; }
-            .container { padding: 20px; border-radius: 12px; }
+            .container-principal { padding: 20px 15px; border-radius: 14px; }
             h1 { font-size: 1.5rem; margin-bottom: 20px; }
-            .grade-temas { grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 25px; }
-            .btn-tema { padding: 12px 8px; font-size: 0.9rem; border-radius: 10px; }
-            .btn-retornar { padding: 8px 20px; font-size: 0.85rem; width: 100%; }
+            .grade-cards { grid-template-columns: 1fr; gap: 15px; }
+            .grade-temas { padding: 10px; gap: 8px; }
+            .btn-tema { padding: 10px 4px; font-size: 0.85rem; }
+            .btn-retornar { padding: 10px 20px; font-size: 0.9rem; width: 100%; }
         }
     </style>
 </head>
@@ -167,44 +181,74 @@
     <img src="https://hitscounter.dev/api/hit?url=felipebrasilblog.github.io&label=Visitantes&icon=broadcast&color=%23198754&message=&style=social&tz=Brazil%2FEast" alt="Contador de Visitas">
 </div>
 
-<div class="container">
-    <h1>Temas</h1>
+<div class="container-principal">
+    <h1>Temas do Blog</h1>
 
-    <div class="grade-temas">
-        <a href="/Classes/educacao.html" class="btn-tema solido-verde">Educação</a>
-        <a href="/Classes/impressoes.html" class="btn-tema solido-azul">Impressões</a>
-        <a href="/Classes/jogos.html" class="btn-tema solido-vermelho">Jogos</a>
-        <a href="/Classes/musicas.html" class="btn-tema solido-laranja">Músicas</a>
-        
-        <a href="/Classes/diario.html" class="btn-tema solido-roxo">Diário</a>
-        <a href="/Classes/japones.html" class="btn-tema solido-ciano">Japonês</a>
-        <a href="/Classes/livros.html" class="btn-tema solido-rosa">Livros</a>
-        <a href="/Classes/animes.html" class="btn-tema solido-castanho">Animes</a>
-        
-        <a href="/Classes/filmes.html" class="btn-tema solido-amarelo">Filmes</a>
-        <a href="/Classes/series.html" class="btn-tema solido-cinza">Séries</a>
-        <a href="/Classes/lugares.html" class="btn-tema solido-verde">Lugares</a>
-        <a href="/Classes/xadrez.html" class="btn-tema solido-azul">Xadrez</a>
-        
-        <a href="/Classes/metablog.html" class="btn-tema solido-vermelho">Metablog</a>
-        <a href="/Classes/registros.html" class="btn-tema solido-laranja">Registros</a>
-        <a href="/Classes/cronicas.html" class="btn-tema solido-roxo">Crônicas</a>
-        <a href="/Classes/tecnologia.html" class="btn-tema solido-ciano">Tecnologia</a>
-        
-        <a href="/Classes/escola.html" class="btn-tema solido-rosa">Escola</a>
-        <a href="/Classes/games.html" class="btn-tema solido-castanho">Games</a>
-        <a href="/Classes/youtube.html" class="btn-tema solido-amarelo">YouTube</a>
-        <a href="/Classes/inenglish.html" class="btn-tema solido-cinza">In English</a>
+    <div class="grade-cards">
+        <!-- Card 1: Educação & Ciências -->
+        <div class="categoria-card">
+            <div class="categoria-titulo">📁 Educação & Ciências</div>
+            <div class="grade-temas">
+                <a href="/Classes/educacao.html" class="btn-tema solido-verde">Educação</a>
+                <a href="/Classes/escola.html" class="btn-tema solido-rosa">Escola</a>
+                <a href="/Classes/pedagogia.html" class="btn-tema solido-laranja">Pedagogia</a>
+                <a href="/Classes/biologia.html" class="btn-tema solido-verde">Biologia</a>
+                <a href="/Classes/ciencias.html" class="btn-tema solido-azul">Ciências</a>
+                <a href="/Classes/geo.html" class="btn-tema solido-vermelho">Geo</a>
+            </div>
+        </div>
 
-        <a href="/Classes/biologia.html" class="btn-tema solido-verde">Biologia</a>
-        <a href="/Classes/ciencias.html" class="btn-tema solido-azul">Ciências</a>
-        <a href="/Classes/geo.html" class="btn-tema solido-vermelho">Geo</a>
-        <a href="/Classes/pedagogia.html" class="btn-tema solido-laranja">Pedagogia</a>
+        <!-- Card 2: Cultura & Entretenimento -->
+        <div class="categoria-card">
+            <div class="categoria-titulo">🎬 Cultura & Entretenimento</div>
+            <div class="grade-temas">
+                <a href="/Classes/arte.html" class="btn-tema solido-ciano">Arte</a>
+                <a href="/Classes/musicas.html" class="btn-tema solido-laranja">Músicas</a>
+                <a href="/Classes/animes.html" class="btn-tema solido-castanho">Animes</a>
+                <a href="/Classes/filmes.html" class="btn-tema solido-amarelo">Filmes</a>
+                <a href="/Classes/series.html" class="btn-tema solido-cinza">Séries</a>
+                <a href="/Classes/quadrinhos.html" class="btn-tema solido-castanho">Quadrinhos</a>
+                <a href="/Classes/livros.html" class="btn-tema solido-rosa">Livros</a>
+                <a href="/Classes/youtube.html" class="btn-tema solido-amarelo">YouTube</a>
+            </div>
+        </div>
 
-        <a href="/Classes/objetos.html" class="btn-tema solido-roxo">Objetos</a>
-        <a href="/Classes/perguntas.html" class="btn-tema solido-ciano">Perguntas</a>
-        <a href="/Classes/listas.html" class="btn-tema solido-rosa">Listas</a>
-        <a href="/Classes/quadrinhos.html" class="btn-tema solido-castanho">Quadrinhos</a>
+        <!-- Card 3: Jogos & Cotidiano -->
+        <div class="categoria-card">
+            <div class="categoria-titulo">🕹️ Jogos & Cotidiano</div>
+            <div class="grade-temas">
+                <a href="/Classes/jogos.html" class="btn-tema solido-vermelho">Jogos</a>
+                <a href="/Classes/games.html" class="btn-tema solido-castanho">Games</a>
+                <a href="/Classes/xadrez.html" class="btn-tema solido-azul">Xadrez</a>
+                <a href="/Classes/diario.html" class="btn-tema solido-roxo">Diário</a>
+                <a href="/Classes/receitas.html" class="btn-tema solido-laranja">Receitas</a>
+                <a href="/Classes/lugares.html" class="btn-tema solido-verde">Lugares</a>
+            </div>
+        </div>
+
+        <!-- Card 4: Reflexões & Registros -->
+        <div class="categoria-card">
+            <div class="categoria-titulo">✍️ Reflexões & Registros</div>
+            <div class="grade-temas">
+                <a href="/Classes/impressoes.html" class="btn-tema solido-azul">Impressões</a>
+                <a href="/Classes/cronicas.html" class="btn-tema solido-roxo">Crônicas</a>
+                <a href="/Classes/registros.html" class="btn-tema solido-laranja">Registros</a>
+                <a href="/Classes/metablog.html" class="btn-tema solido-vermelho">Metablog</a>
+                <a href="/Classes/tecnologia.html" class="btn-tema solido-ciano">Tecnologia</a>
+                <a href="/Classes/objetos.html" class="btn-tema solido-roxo">Objetos</a>
+                <a href="/Classes/perguntas.html" class="btn-tema solido-ciano">Perguntas</a>
+                <a href="/Classes/listas.html" class="btn-tema solido-rosa">Listas</a>
+            </div>
+        </div>
+
+        <!-- Card 5: Idiomas & Outros -->
+        <div class="categoria-card">
+            <div class="categoria-titulo">🌐 Idiomas & Outros</div>
+            <div class="grade-temas">
+                <a href="/Classes/inenglish.html" class="btn-tema solido-cinza">In English</a>
+                <a href="/Classes/japones.html" class="btn-tema solido-ciano">Japonês</a>
+            </div>
+        </div>
     </div>
 
     <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
