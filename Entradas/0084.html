@@ -1,3 +1,8 @@
+O seu código CSS já tem quase tudo pronto com a classe .video-container. A única coisa que falta fazer é envolver o seu iframe dentro dessa div no corpo do HTML e ajustar os atributos de largura e altura dele para que o CSS faça a mágica da responsividade.
+
+Aqui está o seu código corrigido e pronto para funcionar perfeitamente em qualquer tamanho de tela:
+HTML
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -107,7 +112,7 @@
         .video-container {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* Proporção 16:9 */
+            padding-bottom: 66%; /* Ajustado de 56.25% para ~66% para casar melhor com a proporção original do tabuleiro (600x397) */
             height: 0;
             overflow: hidden;
             margin-top: 10px;
@@ -189,11 +194,12 @@
         <h3>06/07/2026 YouTube</h3>
       
         <p>Este é o mate mais vexatório que já apliquei.</p>
-
         <p>Mate de cavalo no canto, sacrifício de dama.</p>
 
-  <iframe src="https://lichess.org/embed/game/T50vaHND?theme=auto&bg=auto"
-width=600 height=397 frameborder=0></iframe>
+        <!-- Alteração feita aqui: adicionada a div container e limpos os atributos do iframe -->
+        <div class="video-container">
+            <iframe src="https://lichess.org/embed/game/T50vaHND?theme=auto&bg=auto" allowtransparency="true" frameborder="0"></iframe>
+        </div>
       
         <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
     </div>
