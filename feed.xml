@@ -5,7 +5,14 @@
     <link>https://felipebrasilblog.github.io</link>
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
-     <item>
+    <item>
+      <title>#0085 - 10 instantâneo</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0085.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0085.html</guid>
+      <category>Escola</category>
+      <description>Artigo publicado na categoria Escola em 06/07/2026.</description>
+    </item> 
+    <item>
       <title>#0084 - Mate da Vergonha</title>
       <link>https://felipebrasilblog.github.io/Entradas/0084.html</link>
       <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0084.html</guid>
