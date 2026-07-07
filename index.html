@@ -16,10 +16,10 @@
         }
 
         ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
         
         body { 
             display: flex;
@@ -81,6 +81,17 @@
             margin-bottom: 20px; 
             color: #2d4a31; 
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Configuração da imagem para ocupar no máximo 40% horizontalmente e ficar centralizada */
+        .avatar-blog {
+            max-width: 40%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto; /* Centraliza horizontalmente e dá margem abaixo */
         }
 
         /* --- GRUPO DE BOTÕES EM LINHA (SITEFELIPE) --- */
@@ -151,7 +162,7 @@
             font-weight: normal;
             border-bottom: 1px dashed #7cb382 !important;
             padding-bottom: 15px;
-            text-align: center; /* Centraliza o texto e o link horizontalmente */
+            text-align: center; 
         }
 
         /* Ajuste de larguras das colunas da tabela */
@@ -172,7 +183,7 @@
             color: #5e8c63; 
         }
 
-        /* --- CONFIGURAÇÃO ADICIONADA: IN ENGLISH + TEXTOS LATERAIS --- */
+        /* --- CONFIGURAÇÃO ADICIONADA: TEXTOS LATERAIS --- */
         .secao-botao-idioma {
             width: 100%;
             display: flex;
@@ -182,13 +193,12 @@
         }
 
         .texto-lateral-verde {
-            font-size: 1rem; /* Mesmo tamanho de fonte das linhas da tabela */
+            font-size: 1rem; 
             font-weight: bold;
             color: #7cb382;
-            width: 30%; /* Garante espaço igual nas laterais para não desalinharem o botão central */
+            width: 30%; 
         }
 
-        /* Garante que o link herde o negrito do container e não o estilo global de links */
         .texto-lateral-verde a {
             font-weight: bold;
             color: #7cb382;
@@ -235,7 +245,7 @@
             margin-top: 20px;
             text-align: center;
             font-size: 0.9rem;
-            color: #2d4a31; /* Verde escuro */
+            color: #2d4a31; 
             font-weight: 500;
             line-height: 1.4;
         }
@@ -253,6 +263,7 @@
             .texto-lateral-verde { width: 100%; text-align: center; }
             .texto-lateral-verde.direita { text-align: center; }
             .btn-tema { width: 100%; padding: 12px 8px; font-size: 0.9rem; border-radius: 10px; }
+            .avatar-blog { max-width: 50%; } /* Dá um leve respiro em telas bem pequenas */
         }
     </style>
 </head>
@@ -269,9 +280,11 @@
  
 
 <div class="container">
-      <h1> <a class="h-card" href="http://felipebrasilblog.github.io">
- <img src="/Imagens/avatarsemfundo.png" alt="" />
- Felipe Brasil Felicio</h1>
+    <h1> 
+        <a class="h-card" href="http://felipebrasilblog.github.io"></a>
+        <img src="/Imagens/avatarsemfundo.png" alt="Avatar Felipe" class="avatar-blog" />
+        Felipe Brasil Felicio
+    </h1>
 
     <div class="menu-botoes">
         <a href="/Cabecalho/sobre.html" class="btn-menu">Sobre</a>
@@ -294,13 +307,13 @@
             </tr>
         </thead>
         <tbody>
-                     <tr>
+             <tr>
                 <td>#0087</td>
                 <td><a href="/Entradas/0087.html">World Cup 2026 - Brazil is out</a></td>
                 <td><a href="/Classes/inenglish.html">In English</a></td>
                 <td style="text-align: right;">07/07/2026</td>
             </tr>
-                         <tr>
+             <tr>
                 <td>#0086</td>
                 <td><a href="/Entradas/0086.html">Brasil fora da copa 2026</a></td>
                 <td><a href="/Classes/impressoes.html">Impressões</a></td>
@@ -324,7 +337,7 @@
                 <td><a href="/Classes/weeklynotes.html">Weekly Notes</a></td>
                 <td style="text-align: right;">05/07/2026</td>
             </tr>
-                     <tr>
+             <tr>
                 <td>#0082</td>
                 <td><a href="/Entradas/0082.html">Dinosaur Jr. - Several Got Away</a></td>
                 <td><a href="/Classes/youtube.html">YouTube</a></td>
@@ -342,23 +355,21 @@
                 <td><a href="/Classes/tecnologia.html">Tecnologia</a></td>
                 <td style="text-align: right;">04/07/2026</td>
             </tr>
-                <tr>
+               <tr>
                 <td>#0079</td>
                 <td><a href="/Entradas/0079.html">Filmes e eu</a></td>
                 <td><a href="/Classes/filmes.html">Filmes</a></td>
                 <td style="text-align: right;">02/07/2026</td>
             </tr>
-                     <tr>
+             <tr>
                 <td>#0078</td>
                 <td><a href="/Entradas/0078.html">Setup Quarto Matinhos 2026</a></td>
                 <td><a href="/Classes/registros.html">Registros</a></td>
                 <td style="text-align: right;">02/07/2026</td>
             </tr>
-
         </tbody>
     </table>
 
-    <!-- Elementos inferiores alinhados na mesma linha -->
     <div class="secao-botao-idioma">
         <div class="texto-lateral-verde">AI-free content</div>
         
@@ -370,13 +381,12 @@
     </div>
 </div>
 
-<!-- Seção de Créditos centralizada abaixo do frame principal -->
 <div class="creditos-rodape">
     <ul>
-  <li><a href="https://github.com/felipebrasilblog" rel="me">@felipebrasilblog on Github</a></li>
-  <li>contato: <a href="mailto:felipefelicio@gmail.com" rel="me">felipefelicio@gmail.com</a></li>
-</ul>
-Créditos a Felipe Brasil Felicio
+        <li><a href="https://github.com/felipebrasilblog" rel="me">@felipebrasilblog on Github</a></li>
+        <li>contato: <a href="mailto:felipefelicio@gmail.com" rel="me">felipefelicio@gmail.com</a></li>
+    </ul>
+    Créditos a Felipe Brasil Felicio
     <div>© 2026 - 2026</div>
 </div>
 
