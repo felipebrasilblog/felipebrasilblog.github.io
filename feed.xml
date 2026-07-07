@@ -5,10 +5,20 @@
     <link>https://felipebrasilblog.github.io</link>
     <description>Feed RSS de todas as postagens do Felipe Brasil Blog</description>
     <language>pt-br</language>
+        <item>
+      <title>#0088 - Divulgando o Blog</title>
+      <link>https://felipebrasilblog.github.io/Entradas/0088.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0088.html</guid>
+      <category>In English</category>
+      <description>Artigo publicado na categoria Metablog em 07/07/2026.
+      <p>De que adianta um livro se ele fica pegando pó na biblioteca? Escrevo neste blog para mim, mas saber que alguém lê isto aqui também é algo interessante. Não é necessário, mas sim interessante.</p>
+<p>Como sempre digo, escrevo este material para ficar arquivado para mim, e para que eu melhore na escrita e consiga escrever textos melhores e formular ideias mais concisas e fundamentadas.</p>
+      </description>
+    </item> 
     <item>
       <title>#0087 - World Cup 2026 - Brazil is out</title>
-      <link>https://felipebrasilblog.github.io/Entradas/0086.html</link>
-      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0086.html</guid>
+      <link>https://felipebrasilblog.github.io/Entradas/0087.html</link>
+      <guid isPermaLink="true">https://felipebrasilblog.github.io/Entradas/0087.html</guid>
       <category>In English</category>
       <description>Artigo publicado na categoria In English em 07/07/2026.</description>
     </item> 
