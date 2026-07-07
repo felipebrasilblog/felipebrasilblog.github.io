@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divulgando o Blog</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            min-height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start;     
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 750px;
+            padding: 40px 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: left;
+            margin: 40px auto;
+            /* Garante que os elementos flex internos respeitem o alinhamento central */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Garante que os parágrafos ocupem a largura total do container */
+        p {
+            width: 100%;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-weight: normal;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+
+        /* CENTRALIZAÇÃO DO TÍTULO DA TABELA E DA TABELA */
+        h2 {
+            text-align: center; 
+            margin-top: 40px;
+            color: #222;
+        }
+
+        table {
+            margin: 20px auto; 
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px; 
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        ul {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        li p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* --- ESTILOS PARA O VÍDEO RESPONSIVO --- */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            border-radius: 6px; /* Leve arredondamento para combinar com o layout */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- BOTÃO RETORNAR (Estilo SITEFELIPE) --- */
+        .btn-retornar {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: 0.3s;
+            background: transparent;
+            border: 2px solid #7cb382;
+            color: #7cb382;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .btn-retornar:hover {
+            background: #7cb382;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Ajustes Responsivos para Mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 25px 20px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 15px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            table {
+                width: 100%; 
+            }
+
+            .btn-retornar {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Divulgando o Blog</h1>
+        <h3>07/07/2026 Metablog</h3>
+
+<p>De que adianta um livro se ele fica pegando pó na biblioteca? Escrevo neste blog para mim, mas saber que alguém lê isto aqui também é algo interessante. Não é necessário, mas sim interessante.</p>
+
+<p>Como sempre digo, escrevo este material para ficar arquivado para mim, e para que eu melhore na escrita e consiga escrever textos melhores e formular ideias mais concisas e fundamentadas.</p>
+
+<p>Mas o <strong>EGO</strong> é grande, e o artista que esconde seus quadros por medo do olhar do outro irá morrer e não saberá se criou artes marcantes ou não. Desta forma, um observador é algo que enriquece o texto, pois gera novas interpretações, novas formas de conhecer o escritor e intrigantes recepções acerca deste material escrito.</p>
+
+<p>Neste contexto fui atrás de grupos de blogs, nacionais e internacionais e encontrei alguns.</p>
+
+<ul>
+  <li><strong>Blogroll.org</strong> – Postei aqui, mas acho que podem demorar meses para me adicionar pois é um processo manual de inserção no site. Gosto deste site porque ele foge do estereótipo de blogueiros tech savvy que só falam de tecnologia, programação e dominam muitas linguagens e códigos. Aqui tem gente “normal”, matemáticos, artistas, advogados, escritores, músicos, jornalistas... gente que não é da área de T.I.</li>
+  <li><strong>PowRSS</strong> – Neste aqui você entra com seu RSS e ele gera um banco de dados de blogs com RSS disponíveis, a primeira página mostra os posts recentes e incrivelmente ele mostra cerca de 500 novas postagens por dia. Ou seja, há certamente alguns milhares de blogs catalogados aqui. Pedi para me adicionarem, mas vou ter que organizar meu RSS com mais texto para que apareça no site. Meu RSS atual tem só uma chamada pro texto, então adicionar umas 3 frases no corpo do meu arquivo .xml provavelmente me abrirá portas neste sentido.</li>
+  <li><strong>Entreblogs</strong> – Pedi por e-mail para a idealizadora do projeto me adicionar. Espero que dê certo. É um grupo de blogs em Português, com posts comunitários, ideias coletivas, clube do livro... acho que vou gostar.</li>
+  <li><strong>Indie Web Ring</strong> – Este aqui é um web ring, um círculo de blogs que se linkam por um chamado web ring. Fiz todo o procedimento formal de inclusão de metadados no meu index.html, consegui logar na wiki dos caras, e depois de umas 3 horas de tentativa e erro finalmente consegui fazer parte da dashboard deles: https://xn--sr8hvo.ws/directory foi trabalhoso, mas consegui. Agora é só dar uma olhada nos mais de 500 blogs desse anel de recomendações e acima de tudo estar no grupo. Entrei no canal de IRC deles e parece um pessoal interessante. Pelas fotos, um bando de esquisitos, mas eu me incluo neste critério também...</li>
+</ul>
+
+<p>E agora vou continuar xeretando nos blogs alheios, lendo material, conhecendo pessoas pelos seus textos. Acredito que meu blog com 88 entradas já possui algum conteúdo mínimo que me permite agregar algo nestes grupos. Agora é só me divertir na blogosfera e montar meu blogroll pessoal com os meus blogs favoritos. O link eu já criei, basta só montar esta lista.</p>
+
+      <p>Também editei o meu blog, adicionei os atalhos do indie webring, os metadados e agora a minha foto. Estava muio com cara de excel o blog sem imagem. Acho que ficou ok.</p>
+
+      <p>É isto, sucesso, por enquanto.</p>
+      
+        <a href="/index.html" class="btn-retornar">Voltar para o Início</a>
+    </div>
+</body>
+</html>
