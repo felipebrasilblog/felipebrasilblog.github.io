@@ -1,3 +1,8 @@
+Aqui está o seu código ajustado.
+
+Para colocar o Webring do IndieWeb bem abaixo do botão "Posts in English here" e mantê-lo centralizado, criei uma nova estrutura (<div class="bloco-central">) para envelopar o botão e o webring juntos, adicionando também um pequeno ajuste no CSS (.webring) para garantir o espaçamento e alinhamento corretos, inclusive no celular.
+HTML
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -208,6 +213,23 @@
             text-align: right;
         }
 
+        /* Bloco para agrupar o botão e o webring verticalmente no centro */
+        .bloco-central {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            width: 40%;
+        }
+
+        /* Estilização do texto do Webring */
+        .webring {
+            font-size: 0.9rem;
+            color: #444;
+            text-align: center;
+            white-space: nowrap;
+        }
+
         .btn-tema {
             display: flex;
             align-items: center;
@@ -221,6 +243,7 @@
             color: #fff;
             transition: all 0.25s ease;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            width: 100%;
         }
 
         .btn-tema:hover {
@@ -262,7 +285,8 @@
             .secao-botao-idioma { flex-direction: column; gap: 15px; }
             .texto-lateral-verde { width: 100%; text-align: center; }
             .texto-lateral-verde.direita { text-align: center; }
-            .btn-tema { width: 100%; padding: 12px 8px; font-size: 0.9rem; border-radius: 10px; }
+            .bloco-central { width: 100%; gap: 10px; }
+            .btn-tema { padding: 12px 8px; font-size: 0.9rem; border-radius: 10px; }
             .avatar-blog { max-width: 50%; } /* Dá um leve respiro em telas bem pequenas */
         }
     </style>
@@ -284,7 +308,7 @@
              <img src="/Imagens/avatarsemfundo.png" alt="Felipe Brasil Blog" class="avatar-blog" />
             
         <h1>Felipe Brasil Blog</h1>
-       
+        
 
     <div class="menu-botoes">
         <a href="/Cabecalho/sobre.html" class="btn-menu">Sobre</a>
@@ -373,10 +397,14 @@
     <div class="secao-botao-idioma">
         <div class="texto-lateral-verde">AI-free content</div>
         
-        <a href="/Classes/inenglish.html" class="btn-tema solido-azul">Posts In English here</a>
-        <a href="https://xn--sr8hvo.ws/previous">←</a>
-An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
-<a href="https://xn--sr8hvo.ws/next">→</a>
+        <div class="bloco-central">
+            <a href="/Classes/inenglish.html" class="btn-tema solido-azul">Posts In English here</a>
+            <div class="webring">
+                <a href="https://xn--sr8hvo.ws/previous">←</a>
+                An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍
+                <a href="https://xn--sr8hvo.ws/next">→</a>
+            </div>
+        </div>
         
         <div class="texto-lateral-verde direita">
             <a href="/Cabecalho/blogroll.html">My Blogroll</a>
